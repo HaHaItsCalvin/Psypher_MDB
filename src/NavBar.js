@@ -31,7 +31,7 @@ class NavBar extends React.Component {
     return (
       <Navbar color="black" dark expand="md" >
           <NavbarBrand>
-            <NavLink to="Home"><img src={BackgroundPsypher} style={navPsypher}/></NavLink>
+            <NavLink to={process.env.PUBLIC_URL+'/'}><img src={BackgroundPsypher} style={navPsypher}/></NavLink>
           </NavbarBrand>
           <NavbarToggler
             onClick={this.toggleCollapse}
@@ -39,7 +39,7 @@ class NavBar extends React.Component {
           <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <NavbarNav left>
               <NavItem active>
-                <NavLink to="Home">Home</NavLink>
+                <NavLink to={process.env.PUBLIC_URL+'/'}>Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="About">About</NavLink>

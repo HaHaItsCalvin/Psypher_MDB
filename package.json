@@ -2,6 +2,7 @@
   "name": "your-app",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://HaHaItsCalvin.github.io/Psypher_MDB",
   "dependencies": {
     "mdbreact": "4.8.5-patch.1",
     "react": "^16.6.0",
@@ -12,6 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "eject": "react-scripts eject",
     "rename": "renamer --find App-clear.js --replace App.js ./src/App-clear.js",
     "remove-demo": "rimraf ./src/font ./src/img ./src/pages ./src/Routes.js ./src/App.js && npm run rename"
