@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ca45b64e3dc96c8ae3fc",
+    "revision": "5585672311d4c5a96013",
     "url": "/Psypher_MDB/static/css/main.052f8b51.chunk.css"
   },
   {
-    "revision": "ca45b64e3dc96c8ae3fc",
-    "url": "/Psypher_MDB/static/js/main.ca45b64e.chunk.js"
+    "revision": "5585672311d4c5a96013",
+    "url": "/Psypher_MDB/static/js/main.55856723.chunk.js"
   },
   {
     "revision": "4a02a4d32beb58b172d9",
@@ -232,7 +232,7 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
-    "revision": "f4b0de270f1940d49249a2a240981ee3",
+    "revision": "88cc1187fee4630b5eb145411ee2c856",
     "url": "/Psypher_MDB/index.html"
   }
 ];
