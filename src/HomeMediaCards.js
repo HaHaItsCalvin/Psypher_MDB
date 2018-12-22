@@ -23,7 +23,7 @@ function HomeMediaCards(props) {
   const { classes } = props;
   return (
         <div>
-            <img src={props.img} className={classes.img}/>
+            <a href={props.link}> <img  src={props.img} className={classes.img}/> </a>
             <Typography align='center' className={classes.bold} variant='h7'>
               <b>{props.Title}</b>
             </Typography>

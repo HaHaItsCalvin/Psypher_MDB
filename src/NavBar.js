@@ -6,6 +6,21 @@ const navPsypher={
         height:35,
 };
 
+const socialMedia=[
+  {
+    icon:'youtube',
+    link:'https://www.youtube.com/channel/UC1OPKweUr8nS75zKuO_FMeA',
+  },
+  {
+    icon:'instagram',
+    link:'https://www.instagram.com/psypherla/',
+  },
+  {
+    icon:'facebook',
+    link:'https://www.facebook.com/psypherLAofficial/',
+  },
+];
+
 class NavBar extends React.Component {
   state = {
     isOpen: false
@@ -38,10 +53,10 @@ class NavBar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle  nav caret>
-                    <div className="d-none d-md-inline">Dropdown</div>
+                    <div className="d-none d-md-inline">Resources</div>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default"right>
-                    <DropdownItem href="#!">Action</DropdownItem>
+                    <DropdownItem href="#!">Mental Health</DropdownItem>
                     <DropdownItem href="#!">Another Action</DropdownItem>
                     <DropdownItem href="#!">Something else here</DropdownItem>
                     <DropdownItem href="#!">Something else here</DropdownItem>
@@ -50,25 +65,13 @@ class NavBar extends React.Component {
               </NavItem>
             </NavbarNav>
             <NavbarNav right>
+            {socialMedia.map(item=>(
               <NavItem>
-                <NavLink className="waves-effect waves-light" to="#!"><Fa icon="twitter" /></NavLink>
+                  <NavLink className="waves-effect waves-light" to={item.link}>
+                    <Fa icon={item.icon} />
+                  </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink className="waves-effect waves-light" to="#!"><Fa icon="google-plus" /></NavLink>
-              </NavItem>
-              <NavItem>
-                <Dropdown>
-                  <DropdownToggle nav caret>
-                    <Fa icon="user" />
-                  </DropdownToggle>
-                  <DropdownMenu className="dropdown-default" right>
-                    <DropdownItem href="#!">Action</DropdownItem>
-                    <DropdownItem href="#!">Another Action</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem>
+              ))}
             </NavbarNav>
           </Collapse>
       </Navbar>

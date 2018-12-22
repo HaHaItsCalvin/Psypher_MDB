@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-import HomeVideoCard from './HomeVideoCard.js';
+import VideoCarousel from './HomeVideoCarousel.js';
 import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
 import HomeMediaCards from './HomeMediaCards.js';
@@ -48,7 +48,7 @@ const styles = theme => ({
     backgroundColor: '#000000',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
-    height:"100vh",
+    height:"90vh",
     width:'100%',
     maxHeight:'937px',
     backgroundPosition:'center',
@@ -108,10 +108,8 @@ const styles = theme => ({
     color:'purple',
   },
   videoUnit:{
-    paddingTop:'10vh',
-    paddingLeft: 50,
-    paddingRight:50,
-    paddingBottom:50,
+    paddingTop:'7vh',
+    paddingBottom:'10vh',
   },
   Video:{
 
@@ -361,42 +359,8 @@ function HomePage(props) {
 
 
         {/*Start Video Section */}
-          <Grid container direction='column' className={classes.videoUnit}>
-            <Grid item>
-              <Typography variant='h2' align='center'> Latest Videos </Typography><hr style={{width:'50%'}}></hr>
-            </Grid>
-            <Grid item>
-              <HomeVideoCard
-                Title="Social Media"
-                Body="Exploring the role of social media in mental health."
-              />
-            </Grid>
-          </Grid>
-{/*Carousel Wrapper */}
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" alt="First slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg" alt="Second slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="Third slide"/>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-{/*Carousel Wrapper */}
+        <VideoCarousel/>
 
-      
 
       {/*Start Testimonials Section */}
         <div className={classes.TestimonialsUnit}>
@@ -439,6 +403,7 @@ function HomePage(props) {
               <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={youtubeIcon}
+                  link="https://www.youtube.com/channel/UC1OPKweUr8nS75zKuO_FMeA"
                   Title="PSYPHER LA"
                   Body="Subscribe to our YouTube channel to watch videos of our work!"
                 />            
@@ -446,6 +411,7 @@ function HomePage(props) {
                 <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={instaIcon}
+                  link="https://www.instagram.com/psypherla/"
                   Title="PSYPHERLA"
                   Body="Follow our Instagram page to keep up with our promos for future events!"
                   />
@@ -453,6 +419,7 @@ function HomePage(props) {
                 <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={emailIcon}
+                  link=""
                   Title="PSYPHEROFFICIAL.LA@GMAIL.COM"
                   Body="Don't worry about us missing your message; we check our email daily!"
                 />            
