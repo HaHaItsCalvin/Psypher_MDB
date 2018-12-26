@@ -5,6 +5,7 @@ import { Col, Container, Row, Footer } from "mdbreact";
 
 class Workshops extends React.Component {
   render() {
+    console.log('Workshops')
     return (
       <React.Fragment>
         <NavBar/>

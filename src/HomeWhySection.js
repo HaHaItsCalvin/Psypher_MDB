@@ -4,8 +4,10 @@ import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { MDBMask, MDBView, MDBContainer } from "mdbreact";
+import { Animation } from "mdbreact";
 
 import WhyClockPic from './WhyClockPic.jpg';
+
 const styles = theme => ({
   WhyUnit:{
     backgroundImage: `url(${WhyClockPic})`,

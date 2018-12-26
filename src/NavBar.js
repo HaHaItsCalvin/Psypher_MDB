@@ -22,10 +22,14 @@ const socialMedia=[
 ];
 
 class NavBar extends React.Component {
-  state = {
-    isOpen: false
+state = {
+    collapseID: ""
   };
-  toggleCollapse = this.setState({ isOpen: !this.state.isOpen });
+
+  toggleCollapse = collapseID => () =>
+    this.setState(prevState => ({
+      collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+    }));
 
   render() {
     return (
@@ -33,10 +37,8 @@ class NavBar extends React.Component {
           <NavbarBrand>
             <NavLink to={process.env.PUBLIC_URL+'/'}><img src={BackgroundPsypher} style={navPsypher}/></NavLink>
           </NavbarBrand>
-          <NavbarToggler
-            onClick={this.toggleCollapse}
-          />
-          <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+           <NavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
+            <Collapse id="navbarCollapse3" isOpen={this.state.collapseID} navbar>
             <NavbarNav left>
               <NavItem active>
                 <NavLink to={process.env.PUBLIC_URL+'/'}>Home</NavLink>
@@ -56,10 +58,8 @@ class NavBar extends React.Component {
                     <div className="d-none d-md-inline">Resources</div>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default"right>
-                    <DropdownItem href="#!">Mental Health</DropdownItem>
-                    <DropdownItem href="#!">Another Action</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
-                    <DropdownItem href="#!">Something else here</DropdownItem>
+                    <DropdownItem href="#!">Nearby Resources</DropdownItem>
+                    <DropdownItem href="#!">Schedule</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
