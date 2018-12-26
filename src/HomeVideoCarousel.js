@@ -23,7 +23,7 @@ import HSTestimonialVid from "./HSTestimonialVid.mp4";
 import DanyelTestimonialVid from "./DanyelTestimonialVid.mp4";
 
 const caption={
-  paddingBottom:'5vh',
+  paddingBottom:'10vh',
 };
 const carouselUnit={
   height:'70vh',
@@ -32,7 +32,6 @@ const vid={
   height:'70vh',
   width:'100%',
   backgroundColor:'#14a37f',
-  paddingLeft:'30%',
 }
 const link={
   color:'white',

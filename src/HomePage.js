@@ -16,6 +16,7 @@ import HomeTestimonialsCards from './HomeTestimonialsCards.js';
 import HomeMediaCards from './HomeMediaCards.js';
 import HomeMissionPics from './HomeMissionPics.js';
 import HomeStatsCards from './HomeStatsCard.js';
+import HomeWhySection from './HomeWhySection.js';
 
 import TestimonialsPic from './TestimonialsPic.jpg';
 import instaIcon from './instaIcon.jpg';
@@ -347,15 +348,7 @@ function HomePage(props) {
           </div>
 
         {/*Start Why Section */}
-          <div className={classes.WhyUnit}>
-            <Grid container direction='column' alignItems='center' justify='center' className={classes.WhyBody}>
-              <Typography className={classes.WhyText}> Despite all this, the average delay between the onset of symptoms of mental illness and intervention is </Typography>
-              <Typography variant='h2' className={classes.WhyText}> 8-10 <span> YEARS...</span>WHY?</Typography>
-              <Typography className={classes.WhyText}> It's time to <span>innovate</span> and <span>reimagine</span> what mental health resources look like. </Typography>              
-              <Typography className={classes.WhyText}> We can't just react to mental illness. </Typography>
-              <Typography className={classes.WhyText}> We need to be proactive about mental health. </Typography>
-            </Grid>
-          </div>
+        <HomeWhySection/>
 
 
         {/*Start Video Section */}
