@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { Animation } from "mdbreact";
 
 import VideoCarousel from './HomeVideoCarousel.js';
 import HomeMissionCards from './HomeMissionCards.js';
@@ -49,7 +50,7 @@ const styles = theme => ({
     backgroundColor: '#000000',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
-    height:"90vh",
+    height:"85vh",
     width:'100%',
     maxHeight:'937px',
     backgroundPosition:'center',
@@ -216,6 +217,7 @@ function HomePage(props) {
       
       {/*Start Mission Section */}
         <div className={classes.missionUnit}>
+            <Animation type="fadeInUp" delay='1s'duration="0.8s">
             <Grid container direction ='row' spacing={8}>
               <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
@@ -235,7 +237,10 @@ function HomePage(props) {
               />  
               </Grid>
             </Grid>
-            <Grid container direction ='row' alignItems='center' className={classes.missionBody}>
+            </Animation>
+
+            <Animation type="fadeInUp" reveal delay="0.5s" duration="0.8s" >
+            <Grid container direction ='row' alignItems='center' className={classes.missionBody}>  
               <Grid item xs={12} sm={4}>
               <Typography align='right' variant='h3' color='primary'>
                   <b>WHO AND</b>
@@ -251,8 +256,9 @@ function HomePage(props) {
               </Grid>
               <Grid item xs={0} sm={1} style={{ borderLeft: '0.1em solid black', paddingTop:'4cm'}}>
             </Grid>
+
               <Grid item xs={12} sm={6}>
-                <Typography align='center'> 
+                 <Typography align='center'> 
                   <span><b>OUR MISSION</b> </span>is to destigmatize mental health 
                 </Typography>
                 <Typography align='center'>
@@ -267,7 +273,7 @@ function HomePage(props) {
                       botPhrase="literacy"
                     />
                   </Grid>
-                        <Grid item xs={12} sm={4}>
+                  <Grid item xs={12} sm={4}>
                     <HomeMissionCards
                       img={MissionPic2}
                       keyword="Highlight"
@@ -284,8 +290,11 @@ function HomePage(props) {
                     />
                   </Grid>
                 </Grid>
+              </Grid>
             </Grid>
-            </Grid>
+          </Animation>
+
+            <Animation type="fadeInUp" reveal delay="0.5s" duration="0.8s" >
              <Grid container direction ='row' spacing={8}>
               <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
@@ -305,6 +314,7 @@ function HomePage(props) {
               />  
               </Grid>
             </Grid>
+            </Animation>
           </div>
 
 
@@ -312,34 +322,43 @@ function HomePage(props) {
           <div className={classes.StatisticsUnit}>
             <Grid container direction='row' alignItems='center' spacing={16}>
               <Grid item xs={12} sm={12} container direction='column' spacing={24} class={classes.Statistics} justify='center' alignItems='center'> 
-                <Typography align='left' variant='subtitle1'> OUR PURPOSE </Typography>
-                <Typography align='left' variant='h3' color='primary'> <b>WHY</b> </Typography>
-                <Typography align='left' variant='h3' style={{color:'#7e518d'}}> <b>PSYPHER</b> </Typography>
+                <Animation type="bounceInDown" reveal duration="0.7s">
+                  <Typography align='left' variant='subtitle1'> OUR PURPOSE </Typography>
+                  <Typography align='left' variant='h3' color='primary'> <b>WHY</b> </Typography>
+                  <Typography align='left' variant='h3' style={{color:'#7e518d'}}> <b>PSYPHER</b> </Typography>
+                </Animation>
                 <Grid item container direction='row' justify='center' spacing={32} style={{paddingTop:'10vh'}}>
                 <Grid item xs={12} sm={3} med={3} lg={3}>
                   <HomeStatsCards 
                     img={StatsPic1}
                     Title="DEATH BY SUICIDE"
                     Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
+                    delay='0s'
                   />            
                 </Grid>
                   <Grid item xs={12} sm={3} med={3} lg={3}>
                   <HomeStatsCards 
                     img={StatsPic2}
                     Title="13 SECONDS"
-                    Body="Every 13 seconds, someone takes their own life in the United States."/>           
+                    Body="Every 13 seconds, someone takes their own life in the United States."
+                    delay='0.1s'
+                    />           
+                    
                 </Grid>
                   <Grid item xs={12} sm={3} med={3} lg={3}>
                   <HomeStatsCards 
                     img={StatsPic3}
                     Title="90% OF CASES"
-                    Body="90% of people who commit suicide had underlying mental illness."/>            
+                    Body="90% of people who commit suicide had underlying mental illness."
+                    delay='0.2s'
+                    />            
                 </Grid>
                   <Grid item xs={12} sm={3} med={3} lg={3}>
                   <HomeStatsCards 
                     img={StatsPic4}
                     Title="14 YEARS OLD"
                     Body="50% of all lifetime cases of mental illness begin by age 14, 75% of them begin by age 24."
+                    delay='0.3s'
                   />  
                 </Grid>
                 </Grid>

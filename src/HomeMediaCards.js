@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
 const styles = theme => ({
   img:{
     maxHeight:'70px',
@@ -15,7 +14,6 @@ const styles = theme => ({
     position:'center,'
   },
   bold:{
-    fontSize:11
   }
 });
 
@@ -24,7 +22,7 @@ function HomeMediaCards(props) {
   return (
         <div>
             <a href={props.link}> <img  src={props.img} className={classes.img}/> </a>
-            <Typography align='center' className={classes.bold} variant='h7'>
+            <Typography align='center' className={classes.bold} variant='h6'>
               <b>{props.Title}</b>
             </Typography>
             <Typography align='center' style={{color:'#707070'}} >
