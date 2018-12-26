@@ -1,10 +1,10 @@
 {
   "main.css": "/Psypher_MDB/static/css/main.052f8b51.chunk.css",
-  "main.js": "/Psypher_MDB/static/js/main.730bb48b.chunk.js",
-  "main.js.map": "/Psypher_MDB/static/js/main.730bb48b.chunk.js.map",
+  "main.js": "/Psypher_MDB/static/js/main.66a124f8.chunk.js",
+  "main.js.map": "/Psypher_MDB/static/js/main.66a124f8.chunk.js.map",
   "static/css/1.dada874e.chunk.css": "/Psypher_MDB/static/css/1.dada874e.chunk.css",
-  "static/js/1.1920af25.chunk.js": "/Psypher_MDB/static/js/1.1920af25.chunk.js",
-  "static/js/1.1920af25.chunk.js.map": "/Psypher_MDB/static/js/1.1920af25.chunk.js.map",
+  "static/js/1.ff953aad.chunk.js": "/Psypher_MDB/static/js/1.ff953aad.chunk.js",
+  "static/js/1.ff953aad.chunk.js.map": "/Psypher_MDB/static/js/1.ff953aad.chunk.js.map",
   "runtime~main.js": "/Psypher_MDB/static/js/runtime~main.986a3480.js",
   "runtime~main.js.map": "/Psypher_MDB/static/js/runtime~main.986a3480.js.map",
   "static/media/Psypher.png": "/Psypher_MDB/static/media/Psypher.cf03613b.png",
@@ -35,9 +35,9 @@
   "static/media/Workshop6.jpg": "/Psypher_MDB/static/media/Workshop6.69fc25f4.jpg",
   "static/media/font-awesome.min.css": "/Psypher_MDB/static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/mdb.css": "/Psypher_MDB/static/media/Roboto-Bold.e31fcf18.ttf",
-  "static/css/1.dada874e.chunk.css.map": "/Psypher_MDB/static/css/1.dada874e.chunk.css.map",
   "static/css/main.052f8b51.chunk.css.map": "/Psypher_MDB/static/css/main.052f8b51.chunk.css.map",
+  "static/css/1.dada874e.chunk.css.map": "/Psypher_MDB/static/css/1.dada874e.chunk.css.map",
   "index.html": "/Psypher_MDB/index.html",
-  "precache-manifest.c4333207401505b8fad8003ec21d6280.js": "/Psypher_MDB/precache-manifest.c4333207401505b8fad8003ec21d6280.js",
+  "precache-manifest.70af9a5626435628422128a4e62a5b73.js": "/Psypher_MDB/precache-manifest.70af9a5626435628422128a4e62a5b73.js",
   "service-worker.js": "/Psypher_MDB/service-worker.js"
 }
