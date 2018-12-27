@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { Animation } from "mdbreact";
 
 const styles = theme => ({
 	
@@ -36,6 +37,7 @@ const styles = theme => ({
 function HomeTestimonialsCards(props) {
   const { classes } = props;
   return (
+  		<Animation type={props.fadeType} reveal delay='0.3s'duration="0.4s">
        	<div className={classes.fullSection}> 
 			<Typography align='center' color='textPrimary' className={classes.Quote}>
 				<b>{props.Quote}</b>
@@ -47,6 +49,7 @@ function HomeTestimonialsCards(props) {
 				<b>{props.Background}</b>
 			</Typography>
 		</div>
+		</Animation>
     )
   }
 

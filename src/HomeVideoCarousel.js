@@ -27,11 +27,11 @@ const caption={
 };
 const carouselUnit={
   height:'70vh',
+  backgroundColor:'#14a37f',
 };
 const vid={
   height:'70vh',
   width:'100%',
-  backgroundColor:'#14a37f',
 }
 const link={
   color:'white',
@@ -104,13 +104,12 @@ class VideoCarousel extends Component {
           <CarouselInner>
           {carouselData.map(item=>(
             <CarouselItem itemId={item.id}>
-              <View>
-            <video controls muted className="video-fluid d-block" style={vid} autoPlay loop>
-              <source src={item.video} type={item.vidType} />
-            </video>
-                <Mask overlay={item.overlay}/>
-              </View>
-
+            <View>
+              <video controls muted className="video-fluid d-block" style={vid} autoPlay loop>
+                <source src={item.video} type={item.vidType} />
+              </video>
+              <Mask overlay={item.overlay}/>
+            </View>
               <CarouselCaption style={caption}>
                 <h3 className="h3-responsive">{item.header}</h3>
                 <MDBBtn color="deep-purple"><a href={item.link} style={link}>Play Video</a></MDBBtn>

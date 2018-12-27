@@ -145,7 +145,7 @@ const styles = theme => ({
     backgroundPosition:'left',
   },
   contactHeader:{
-    paddingBottom:'15vh',
+    paddingBottom:'12vh',
     paddingLeft:'15vh',
     paddingTop:'5vh',
   },
@@ -376,7 +376,9 @@ function HomePage(props) {
 
       {/*Start Testimonials Section */}
         <div className={classes.TestimonialsUnit}>
-          <h1 align='center' className={classes.testimonialHeader}> Testimonials: How Psypher Makes an Impact</h1>
+          <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
+            <h1 align='center' className={classes.testimonialHeader}> Testimonials: How Psypher Makes an Impact</h1>
+          </Animation>
             <Grid container direction= 'row' className={classes.Testimonials} alignItems="center" justify="center" spacing='40' xs={12} s={12} med={12} lg={12} xl={12}>
               <Grid item sm={4}> 
               <HomeTestimonialsCards
@@ -385,8 +387,10 @@ function HomePage(props) {
                     with any mental health concerns they may be facing."
                   Source="Grace Zhu"
                   Background="Psypher Participant"  
+                  fadeType="fadeInLeft"
               />
               </Grid>
+              
               <Grid item sm={4} style={{ borderLeft: '0.1em solid white', paddingTop:'0.5cm'}}> 
               <HomeTestimonialsCards
                   Quote="Sometimes there is stuff that you feel is burdening you, and it’s hard to put it into words. Sometimes releasing it 
@@ -394,15 +398,18 @@ function HomePage(props) {
                     That’s a cathartic experience."
                   Source="Alexia Diaz"
                   Background="Psypher Participant"  
+                  fadeType="fadeInUp" 
               />
               </Grid>
-                    <Grid item sm={4} style={{ borderLeft: '0.1em solid white', paddingTop:'0.1cm'}}> 
+              
+              <Grid item sm={4} style={{ borderLeft: '0.1em solid white', paddingTop:'0.1cm'}}> 
               <HomeTestimonialsCards
                   Quote="Talking about mental health is just really unapproachable and sometimes even boring for other people.  
                     Having dance to add this cool, fun aspect to it can keep you engaged. It makes 
                     these learning experiences so much more impactful."
                     Source="JK Suh"
-                    Background="Psypher Participant"  
+                    Background="Psypher Participant" 
+                    fadeType="fadeInRight" 
                 />
               </Grid>
             </Grid>
@@ -410,30 +417,35 @@ function HomePage(props) {
 
       {/*Start ContactUs Section*/}
         <div className={classes.contactUnit}>
-              <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
+          <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
+            <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
+          </Animation>
             <Grid container spacing={40} direction='row' justify='center' alignItems='center' className={classes.ContactMediaBody}>
-              <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
+              <Grid item xs={12} sm={12} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={youtubeIcon}
                   link="https://www.youtube.com/channel/UC1OPKweUr8nS75zKuO_FMeA"
                   Title="PSYPHER LA"
                   Body="Subscribe to our YouTube channel to watch videos of our work!"
+                  delay="0.5"
                 />            
               </Grid>
-                <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
+                <Grid item xs={12} sm={12} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={instaIcon}
                   link="https://www.instagram.com/psypherla/"
                   Title="PSYPHERLA"
                   Body="Follow our Instagram page to keep up with our promos for future events!"
+                  delay="0.7"
                   />
               </Grid>
-                <Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
+                <Grid item xs={12} sm={12} med={3} lg={3} xl={3}>
                 <HomeMediaCards 
                   img={emailIcon}
                   link=""
                   Title="PSYPHEROFFICIAL.LA@GMAIL.COM"
                   Body="Don't worry about us missing your message; we check our email daily!"
+                  delay="0.9"
                 />            
               </Grid>
                 

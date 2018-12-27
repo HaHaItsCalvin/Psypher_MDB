@@ -25,7 +25,7 @@ const styles = theme => ({
     paddingLeft:'10vh',
     paddingRight:'10vh',
     paddingBottom:'5vh',
-    color:'#7700cf',
+    color:'#000000',
   },
   WhyHighlights:{
     color:'#2e004f',
@@ -38,13 +38,27 @@ function HomeWhySection(props) {
   return(
       <MDBView className={classes.WhyUnit} >
         <MDBMask className='flex-center' overlay='white-strong' >
+        <Animation type="slideInUp" reveal duration="1s">
           <Grid container direction='column' alignItems='center' justify='center' className={classes.WhyBody}>
-            <Typography variant='h5' className={classes.WhyText}> <b>Despite all this, the average delay between the onset of symptoms of mental illness and intervention is </b></Typography>
-            <Typography variant='h2' className={classes.WhyText}> <b>8-10 <span style={{color:'black'}}> YEARS...</span>WHY?</b></Typography>
-            <Typography variant='h5' className={classes.WhyText}> <b>It's time to <span style={{color:'#2e004f'}}>innovate</span> and <span style={{color:'#2e004f'}}>reimagine</span> what mental health resources look like. </b></Typography>              
-            <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We can't just react</span> to mental illness. </b></Typography>
-            <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We need to be proactive </span>about mental health. </b></Typography>
+            <Animation type="slideInUp" reveal duration="1s">
+              <Typography variant='h5' className={classes.WhyText}> <b>The average <span style={{color:'#7700cf'}}> delay between </span>  the onset of <span style={{color:'#7700cf'}}>symptoms </span> of mental illness <span style={{color:'#7700cf'}}>and intervention</span> is </b></Typography>
+            </Animation>
+            <Animation type="slideInUp" reveal delay='0.1s'duration="1s">
+              <Animation type="pulse" infinite duration="3s">
+                <Typography variant='h2' className={classes.WhyText}> <span style={{color:'#7700cf'}}><b>8-10 YEARS...WHY?</b></span></Typography>
+              </Animation>
+            </Animation>
+            <Animation type="slideInUp" reveal delay='0.2s'duration="1s">
+              <Typography variant='h5' className={classes.WhyText}> <b>It's time to <span style={{color:'#2e004f'}}>innovate</span> and <span style={{color:'#2e004f'}}>reimagine</span> what mental health resources look like. </b></Typography>              
+            </Animation>
+            <Animation type="slideInUp" reveal delay='0.3s'duration="1s">
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We can't just react</span> to mental illness. </b></Typography>
+            </Animation>
+            <Animation type="slideInUp" reveal delay='0.4s'duration="1s">
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We need to be proactive </span>about mental health. </b></Typography>
+            </Animation>
           </Grid>
+          </Animation>
         </MDBMask>
       </MDBView>
     )

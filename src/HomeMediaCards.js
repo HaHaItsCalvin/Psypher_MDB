@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { Animation } from "mdbreact";
 const styles = theme => ({
   img:{
     maxHeight:'70px',
@@ -20,7 +21,9 @@ const styles = theme => ({
 function HomeMediaCards(props) {
   const { classes } = props;
   return (
+
         <div>
+            <Animation type="fadeIn" reveal delay={props.delay} duration="0.8s">
             <a href={props.link}> <img  src={props.img} className={classes.img}/> </a>
             <Typography align='center' className={classes.bold} variant='h6'>
               <b>{props.Title}</b>
@@ -28,7 +31,9 @@ function HomeMediaCards(props) {
             <Typography align='center' style={{color:'#707070'}} >
               {props.Body}
             </Typography>
+         </Animation>
          </div>   
+         
     )
   }
 
