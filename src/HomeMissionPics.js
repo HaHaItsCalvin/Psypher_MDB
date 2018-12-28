@@ -16,17 +16,17 @@ const styles = theme => ({
 function HomeMissionPics(props) {
   const { classes } = props;
   return (
-       	<div> 
+      <div> 
        		<img className={classes.img} src={props.img}/>
-			<Typography align='center' color='textPrimary'>
-				{props.Quote}
-			</Typography>
-			<Typography component='h1' variant='b2' align='right' color='textPrimary'>
-				{props.Source}
-			</Typography>
-			<Typography component='h1'  align='right' color='textPrimary'>
-				{props.Background}
-			</Typography>
+    			<Typography align='center' color='textPrimary'>
+    				{props.Quote}
+    			</Typography>
+    			<Typography component='h1' variant='b2' align='right' color='textPrimary'>
+    				{props.Source}
+    			</Typography>
+    			<Typography component='h1'  align='right' color='textPrimary'>
+    				{props.Background}
+    			</Typography>
 		</div>
     )
   }

@@ -119,8 +119,8 @@ const styles = theme => ({
   TestimonialsUnit:{
     paddingLeft: 50,
     paddingRight:50,
-    paddingBottom:50,
-    paddingTop:'5vh',
+    paddingBottom:'15vh',
+    paddingTop:'15vh',
     backgroundImage: `url(${TestimonialsPic})`,
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
@@ -132,7 +132,7 @@ const styles = theme => ({
   },
   testimonialHeader:{
     color:'#B388FF',
-    paddingBottom:35, 
+    paddingBottom:'6vh', 
   },
   contactUnit:{
     paddingTop:'10vh',
