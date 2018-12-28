@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "bb622eaf4884200a9e3b",
-    "url": "/Psypher_MDB/static/css/main.052f8b51.chunk.css"
+    "revision": "f5b1adf05440e7095473",
+    "url": "/Psypher_MDB/static/css/main.77c13bbb.chunk.css"
   },
   {
-    "revision": "bb622eaf4884200a9e3b",
-    "url": "/Psypher_MDB/static/js/main.bb622eaf.chunk.js"
+    "revision": "f5b1adf05440e7095473",
+    "url": "/Psypher_MDB/static/js/main.f5b1adf0.chunk.js"
   },
   {
-    "revision": "ff953aad2d622bdea6c1",
-    "url": "/Psypher_MDB/static/css/1.dada874e.chunk.css"
+    "revision": "502d2a7671b5a26fe8e8",
+    "url": "/Psypher_MDB/static/css/1.3646d467.chunk.css"
   },
   {
-    "revision": "ff953aad2d622bdea6c1",
-    "url": "/Psypher_MDB/static/js/1.ff953aad.chunk.js"
+    "revision": "502d2a7671b5a26fe8e8",
+    "url": "/Psypher_MDB/static/js/1.502d2a76.chunk.js"
   },
   {
     "revision": "986a34806edba71ba561",
@@ -124,6 +124,26 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/Workshop6.69fc25f4.jpg"
   },
   {
+    "revision": "526cec51d280b4b83efc2eb24ddac11a",
+    "url": "/Psypher_MDB/static/media/MiyukiKanada.526cec51.jpg"
+  },
+  {
+    "revision": "66b48b91bc8c9e2e5d60e4031bc5b83b",
+    "url": "/Psypher_MDB/static/media/LisaGoldfein.66b48b91.JPG"
+  },
+  {
+    "revision": "8f82c4bed6654dae0fcfba2fb4ba5d26",
+    "url": "/Psypher_MDB/static/media/TracyBevington.8f82c4be.jpg"
+  },
+  {
+    "revision": "a0b466fe56fa7750e1906ac33c58d674",
+    "url": "/Psypher_MDB/static/media/SeanYee.a0b466fe.jpg"
+  },
+  {
+    "revision": "07e0737231e36c0a7e8d4bcabff56578",
+    "url": "/Psypher_MDB/static/media/ArnelCalvario.07e07372.JPG"
+  },
+  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/Psypher_MDB/static/media/fontawesome-webfont.af7ae505.woff2"
   },
@@ -144,12 +164,12 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "11911410dca2de148f30954eb2fd5eab",
-    "url": "/Psypher_MDB/static/media/arrow_left.11911410.svg"
-  },
-  {
     "revision": "8ef6a08cdc1154920165680a4edde771",
     "url": "/Psypher_MDB/static/media/arrow_right.8ef6a08c.svg"
+  },
+  {
+    "revision": "11911410dca2de148f30954eb2fd5eab",
+    "url": "/Psypher_MDB/static/media/arrow_left.11911410.svg"
   },
   {
     "revision": "dfe56a876d0282555d1e2458e278060f",
@@ -176,12 +196,12 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/Roboto-Thin.954bbdeb.woff2"
   },
   {
-    "revision": "2751ee43015f9884c3642f103b7f70c9",
-    "url": "/Psypher_MDB/static/media/Roboto-Regular.2751ee43.woff2"
-  },
-  {
     "revision": "69f8a0617ac472f78e45841323a3df9e",
     "url": "/Psypher_MDB/static/media/Roboto-Light.69f8a061.woff2"
+  },
+  {
+    "revision": "2751ee43015f9884c3642f103b7f70c9",
+    "url": "/Psypher_MDB/static/media/Roboto-Regular.2751ee43.woff2"
   },
   {
     "revision": "574fd0b50367f886d359e8264938fc37",
@@ -200,24 +220,24 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/Roboto-Light.3b813c2a.woff"
   },
   {
-    "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
-    "url": "/Psypher_MDB/static/media/Roboto-Regular.ba3dcd89.woff"
-  },
-  {
     "revision": "fc78759e93a6cac50458610e3d9d63a0",
     "url": "/Psypher_MDB/static/media/Roboto-Medium.fc78759e.woff"
+  },
+  {
+    "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
+    "url": "/Psypher_MDB/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
     "revision": "dc81817def276b4f21395f7ea5e88dcd",
     "url": "/Psypher_MDB/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
-    "revision": "94998475f6aea65f558494802416c1cf",
-    "url": "/Psypher_MDB/static/media/Roboto-Thin.94998475.ttf"
-  },
-  {
     "revision": "46e48ce0628835f68a7369d0254e4283",
     "url": "/Psypher_MDB/static/media/Roboto-Light.46e48ce0.ttf"
+  },
+  {
+    "revision": "94998475f6aea65f558494802416c1cf",
+    "url": "/Psypher_MDB/static/media/Roboto-Thin.94998475.ttf"
   },
   {
     "revision": "df7b648ce5356ea1ebce435b3459fd60",
@@ -232,7 +252,7 @@ self.__precacheManifest = [
     "url": "/Psypher_MDB/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
-    "revision": "e5b4094f1fcc0b7927625eb3754837a9",
+    "revision": "0f1d29e77450dab142089d9dcf06c6b6",
     "url": "/Psypher_MDB/index.html"
   }
 ];
