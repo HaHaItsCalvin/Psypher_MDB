@@ -30,7 +30,6 @@ state = {
     this.setState(prevState => ({
       collapseID: prevState.collapseID !== collapseID ? collapseID : ""
     }));
-
   render() {
     return (
       <Navbar color="black" dark expand="md" >
@@ -44,13 +43,13 @@ state = {
                 <NavLink to={process.env.PUBLIC_URL+'/'}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="About">About</NavLink>
+                <NavLink to="/About">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="Partners">Partners</NavLink>
+                <NavLink to="/Partners">Partners</NavLink>
               </NavItem>              
               <NavItem>
-                <NavLink to="Workshops">Workshops</NavLink>
+                <NavLink to="/Workshops">Workshops</NavLink>
               </NavItem>
               <NavItem>
                 <Dropdown>
