@@ -1,7 +1,7 @@
 {
   "main.css": "/Psypher_MDB/static/css/main.77c13bbb.chunk.css",
-  "main.js": "/Psypher_MDB/static/js/main.f5b1adf0.chunk.js",
-  "main.js.map": "/Psypher_MDB/static/js/main.f5b1adf0.chunk.js.map",
+  "main.js": "/Psypher_MDB/static/js/main.9bcbfba6.chunk.js",
+  "main.js.map": "/Psypher_MDB/static/js/main.9bcbfba6.chunk.js.map",
   "static/css/1.3646d467.chunk.css": "/Psypher_MDB/static/css/1.3646d467.chunk.css",
   "static/js/1.502d2a76.chunk.js": "/Psypher_MDB/static/js/1.502d2a76.chunk.js",
   "static/js/1.502d2a76.chunk.js.map": "/Psypher_MDB/static/js/1.502d2a76.chunk.js.map",
@@ -40,9 +40,9 @@
   "static/media/ArnelCalvario.JPG": "/Psypher_MDB/static/media/ArnelCalvario.07e07372.JPG",
   "static/media/font-awesome.min.css": "/Psypher_MDB/static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/mdb.css": "/Psypher_MDB/static/media/Roboto-Bold.e31fcf18.ttf",
-  "static/css/main.77c13bbb.chunk.css.map": "/Psypher_MDB/static/css/main.77c13bbb.chunk.css.map",
   "static/css/1.3646d467.chunk.css.map": "/Psypher_MDB/static/css/1.3646d467.chunk.css.map",
+  "static/css/main.77c13bbb.chunk.css.map": "/Psypher_MDB/static/css/main.77c13bbb.chunk.css.map",
   "index.html": "/Psypher_MDB/index.html",
-  "precache-manifest.972a2d11304a2c63ada533a7cc0e1ae6.js": "/Psypher_MDB/precache-manifest.972a2d11304a2c63ada533a7cc0e1ae6.js",
+  "precache-manifest.36c9244fdae278f62a16da8cbb49d6b7.js": "/Psypher_MDB/precache-manifest.36c9244fdae278f62a16da8cbb49d6b7.js",
   "service-worker.js": "/Psypher_MDB/service-worker.js"
 }
