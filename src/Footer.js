@@ -39,7 +39,7 @@ const footers = [
   },
   
   {
-    title: 'Social Media',
+    title: 'Contact Us',
     description: ['YouTube', 'Instagram', 'Email', 'Facebook'],
   },
   {

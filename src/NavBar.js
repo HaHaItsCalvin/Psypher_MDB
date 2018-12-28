@@ -59,6 +59,7 @@ state = {
                   <DropdownMenu className="dropdown-default"right>
                     <DropdownItem href="#!">Nearby Resources</DropdownItem>
                     <DropdownItem href="#!">Schedule</DropdownItem>
+                    <DropdownItem href="#!">Psypher at UCLA </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>

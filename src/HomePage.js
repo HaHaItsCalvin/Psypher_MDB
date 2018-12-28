@@ -120,7 +120,7 @@ const styles = theme => ({
     paddingLeft: 50,
     paddingRight:50,
     paddingBottom:'15vh',
-    paddingTop:'15vh',
+    paddingTop:'10vh',
     backgroundImage: `url(${TestimonialsPic})`,
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
@@ -132,7 +132,7 @@ const styles = theme => ({
   },
   testimonialHeader:{
     color:'#B388FF',
-    paddingBottom:'6vh', 
+    paddingBottom:'12vh', 
   },
   contactUnit:{
     paddingTop:'10vh',
@@ -222,18 +222,26 @@ function HomePage(props) {
               <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
                 img={WorkshopPic1}
+                header="First Psypher Workshop"
+                info="Choreographer Natalie Sin teaches for Psypher’s first dance workshop at UCLA."
+                link="https://www.youtube.com/watch?v=hM9KhgLkVKQ&feature=youtu.be&t=102"
               />  
               </Grid>
               
               <Grid item xs={12} sm={6} med={6} lg={6}>
               <HomeMissionPics
                 img={WorkshopPic2}
+                header="Mental Health Stigma Workshop"
+                info="Mental Health Stigma Workshop at Elements Dance Space in Pasadena."
+                link="https://www.youtube.com/watch?v=N6HATuCctXc"
               />    
               </Grid>
                     
-                    <Grid item xs={12} sm={3} med={3} lg={3}>
+              <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
                 img={WorkshopPic3}
+                header="History of Urban Dance Workshop"
+                info="In collaboration with his Roots B4 Branches program, Arnel Calvario teaches about the history of urban dance."
               />  
               </Grid>
             </Grid>
@@ -299,19 +307,28 @@ function HomePage(props) {
               <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
                 img={WorkshopPic4}
-              />  
+                header="Principles of Dance Therapy"
+                info="Dance Movement Therapists Miyuki Kanda and Lisa Goldfein teach about the principles of dance/movement therapy."
+                link="https://www.youtube.com/watch?v=hM9KhgLkVKQ"
+                />
               </Grid>
               
               <Grid item xs={12} sm={6} med={6} lg={6}>
               <HomeMissionPics
                 img={WorkshopPic5}
-              />    
+                header="Social Media & Mental Health Workshop at Glendale High School"
+                info="Psypher’s social media and mental health workshop with Glendale High School’s CoEd Dance Team."
+                link="https://www.youtube.com/watch?v=UccGUpHq1nU"
+                />    
               </Grid>
                     
-                    <Grid item xs={12} sm={3} med={3} lg={3}>
+              <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
                 img={WorkshopPic6}
-              />  
+                header="Good Vibes with Psypher"
+                info="Psypher participants engaging in a mirroring exercise and sharing some good vibes!"
+                link="https://youtu.be/hM9KhgLkVKQ?t=58"
+                />
               </Grid>
             </Grid>
             </Animation>
@@ -377,7 +394,9 @@ function HomePage(props) {
       {/*Start Testimonials Section */}
         <div className={classes.TestimonialsUnit}>
           <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
-            <h1 align='center' className={classes.testimonialHeader}> Testimonials: How Psypher Makes an Impact</h1>
+            <Typography variant='h3' align='center' className={classes.testimonialHeader}> 
+              Testimonials: How Psypher Makes an Impact
+            </Typography>
           </Animation>
             <Grid container direction= 'row' className={classes.Testimonials} alignItems="center" justify="center" spacing='40' xs={12} s={12} med={12} lg={12} xl={12}>
               <Grid item sm={4}> 

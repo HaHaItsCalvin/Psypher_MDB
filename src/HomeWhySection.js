@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { MDBMask, MDBView, MDBContainer } from "mdbreact";
+import { MDBMask, MDBView } from "mdbreact";
 import { Animation } from "mdbreact";
 
 import WhyClockPic from './WhyClockPic.jpg';
@@ -27,9 +27,6 @@ const styles = theme => ({
     paddingBottom:'5vh',
     color:'#000000',
   },
-  WhyHighlights:{
-    color:'#2e004f',
-  }
 });
 
 function HomeWhySection(props) {
@@ -49,13 +46,13 @@ function HomeWhySection(props) {
               </Animation>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.2s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b>It's time to <span style={{color:'#2e004f'}}>innovate</span> and <span style={{color:'#2e004f'}}>reimagine</span> what mental health resources look like. </b></Typography>              
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>It's time to innovate and reimagine</span> what mental health resources look like. </b></Typography>              
             </Animation>
             <Animation type="slideInUp" reveal delay='0.3s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We can't just react</span> to mental illness. </b></Typography>
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>We can't just react</span> to mental illness. </b></Typography>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.4s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#2e004f'}}>We need to be proactive </span>about mental health. </b></Typography>
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>We need to be proactive </span>about mental health. </b></Typography>
             </Animation>
           </Grid>
           </Animation>
