@@ -1,7 +1,7 @@
 {
   "main.css": "/Psypher_MDB/static/css/main.5c583c69.chunk.css",
-  "main.js": "/Psypher_MDB/static/js/main.6000c602.chunk.js",
-  "main.js.map": "/Psypher_MDB/static/js/main.6000c602.chunk.js.map",
+  "main.js": "/Psypher_MDB/static/js/main.4393834a.chunk.js",
+  "main.js.map": "/Psypher_MDB/static/js/main.4393834a.chunk.js.map",
   "static/css/1.1aaf9589.chunk.css": "/Psypher_MDB/static/css/1.1aaf9589.chunk.css",
   "static/js/1.de31b07b.chunk.js": "/Psypher_MDB/static/js/1.de31b07b.chunk.js",
   "static/js/1.de31b07b.chunk.js.map": "/Psypher_MDB/static/js/1.de31b07b.chunk.js.map",
@@ -48,6 +48,6 @@
   "static/css/main.5c583c69.chunk.css.map": "/Psypher_MDB/static/css/main.5c583c69.chunk.css.map",
   "static/css/1.1aaf9589.chunk.css.map": "/Psypher_MDB/static/css/1.1aaf9589.chunk.css.map",
   "index.html": "/Psypher_MDB/index.html",
-  "precache-manifest.792cbc3e505b597f237589e0bbbdada7.js": "/Psypher_MDB/precache-manifest.792cbc3e505b597f237589e0bbbdada7.js",
+  "precache-manifest.ab5cae1be87f8380077c90bf2825e96c.js": "/Psypher_MDB/precache-manifest.ab5cae1be87f8380077c90bf2825e96c.js",
   "service-worker.js": "/Psypher_MDB/service-worker.js"
 }
