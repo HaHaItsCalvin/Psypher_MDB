@@ -82,7 +82,7 @@ class HomeMissionPics extends React.Component {
                  {this.state.showClickable ? this.props.info : null} 
             </Typography>
             <div style={button}>
-                  {this.state.showClickable ? <a href={this.props.link} target="_blank" > <MDBBtn style={buttonText}> VIDEO </MDBBtn> </a>: null} 
+                  {this.state.showClickable ? <a href={this.props.link} target="_blank" > <MDBBtn color='btn aqua-gradient' style={buttonText}> VIDEO </MDBBtn> </a>: null} 
             </div>
        	</div>
       </div>

@@ -11,6 +11,8 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
+import OriginalVidSection from './HomeVideoOriginalSection.js';
+import HomeVidSection from './HomeVideoSection.js';
 import VideoCarousel from './HomeVideoCarousel.js';
 import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
@@ -249,28 +251,28 @@ function HomePage(props) {
 
             <Animation type="fadeInUp" reveal delay="0.5s" duration="0.8s" >
             <Grid container direction ='row' alignItems='center' className={classes.missionBody}>  
-              <Grid item xs={12} sm={4}>
-              <Typography align='right' variant='h3' color='primary'>
-                  <b>WHO AND</b>
-              </Typography>
-              <Typography align='right' variant='h3' color='primary'>
-                  <b>WHAT</b>
-              </Typography>
-              <Typography align='right' variant='h3' color='primary'>
-                  <b>IS <span style={{color:'#9900ff'}}> PSYPHER </span></b>
-              </Typography>
+              <Grid item xs={10} sm={4} alignItems='center' justify='center'>
+                <Typography align='right' variant='h3' color='primary'>
+                    <b>WHO AND</b>
+                </Typography>
+                <Typography align='right' variant='h3' color='primary'>
+                    <b>WHAT</b>
+                </Typography>
+                <Typography align='right' variant='h3' color='primary'>
+                    <b>IS <span style={{color:'#9900ff'}}> PSYPHER </span></b>
+                </Typography>
               </Grid>
-              <Grid item xs={0} sm={1}>
+              <Grid item xs={1} sm={1}>
               </Grid>
-              <Grid item xs={0} sm={1} style={{ borderLeft: '0.1em solid black', paddingTop:'4cm'}}>
+              <Grid item xs={1} sm={1} style={{ borderLeft: '0.1em solid black', paddingTop:'4cm'}}>
             </Grid>
 
               <Grid item xs={12} sm={6}>
-                 <Typography align='center'> 
-                  <span><b>OUR MISSION</b> </span>is to destigmatize mental health 
+                 <Typography align='center' style={{fontSize: '24px', color: '#3CDBC0'}}> 
+                  <span ><b>OUR MISSION</b> </span>
                 </Typography>
                 <Typography align='center'>
-                  through urban dance workshops that
+                  is to destigmatize mental health through urban dance workshops that
                 </Typography>
                 <Grid item container direction="row" justify='center' spacing={32}>
                   <Grid item xs={12} sm={4}>
@@ -293,7 +295,7 @@ function HomePage(props) {
                     <HomeMissionCards
                       img={MissionPic3}
                       keyword="Partner"
-                      phrase="with local mental health professionals"
+                      phrase="with local mental health "
                       botPhrase='professionals'
                     />
                   </Grid>
@@ -316,7 +318,7 @@ function HomePage(props) {
               <Grid item xs={12} sm={6} med={6} lg={6}>
               <HomeMissionPics
                 img={WorkshopPic5}
-                header="Social Media & Mental Health Workshop at Glendale High School"
+                header="Social Media & Mental Health Workshop"
                 info="Psypher’s social media and mental health workshop with Glendale High School’s CoEd Dance Team."
                 link="https://www.youtube.com/watch?v=UccGUpHq1nU"
                 />    

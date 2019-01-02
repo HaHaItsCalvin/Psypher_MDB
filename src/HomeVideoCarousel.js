@@ -10,6 +10,8 @@ import {
 } from "mdbreact";
 import { MDBBtn } from "mdbreact";
 
+import HomeVidSection from './HomeVideoSection.js';
+
 import StigmasWorkshop from "./StigmasAtEDS.jpg";
 import StigmasTestimonial from "./StigmasTestimonial.jpg";
 import Glendale from "./Glendale.jpg";
@@ -22,12 +24,16 @@ import GlendaleVid from './GlendaleVid.mp4';
 import HSTestimonialVid from "./HSTestimonialVid.mp4";
 import DanyelTestimonialVid from "./DanyelTestimonialVid.mp4";
 
-const caption={
-  paddingBottom:'10vh',
-};
+import fullStigmasVid from './fullStigmasVid.mp4';
+import fullStigmasTestimonialVid from './fullStigmasTestimonialVid.mp4';
+import fullGlendaleVid from './fullGlendaleVid.mp4';
+import fullHSTestimonialVid from "./fullHSTestimonialVid.mp4";
+import fullDanyelTestimonialVid from "./fullDanyelTestimonialVid.mp4";
+
 const carouselUnit={
+  paddingTop:'5vh',
   height:'70vh',
-  backgroundColor:'#14a37f',
+  backgroundColor:'black',
 };
 const vid={
   height:'70vh',
@@ -42,78 +48,95 @@ const carouselData=[
     id: '1',
     img: StigmasWorkshop,
     overlay:'black-light',
-    header:'Mental Health Stigma Workshop at Elements Dance Space',
-    text:'test',
+    header:'Mental Health Stigma Workshop',
+    info:'Mental Health Stigma Workshop at Elements Dance Space in Pasadena',
     link:'https://www.youtube.com/watch?v=N6HATuCctXc',
-    video: StigmasVid, 
+    highlightVideo: StigmasVid, 
+    fullVideo: fullStigmasVid,
     vidType:'video/mp4',
+    iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1',
   },  
   {
     id: '2',
     img: StigmasTestimonial,
     overlay:'black-light',
     header:'Stigma Workshop Testimonial ',
-    text:'test',
+    info:'test',
     link:'https://www.youtube.com/watch?v=ELVJ0K6Bdzo',
-    video:StigmasTestimonialVid,
+    highlightVideo:StigmasTestimonialVid,
+    fullVideo: fullStigmasTestimonialVid,
     vidType:'video/mp4',
+    iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1',
   },
   {
     id: '3',
     img: Glendale,
     overlay:'black-light',
-    header:'Social Media and Mental Health Workshop at Glendale High School',
-    text:'test',
+    header:'Social Media and Mental Health Workshop',
+    info:'test',
     link:'https://www.youtube.com/watch?v=UccGUpHq1nU&t=1s',
-    video:GlendaleVid,
+    highlightVideo:GlendaleVid,
+    fullVideo: fullGlendaleVid,
     vidType:'video/mp4',
+    iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1',
   }, 
   {
     id: '4',
     img: HSTestimonial,
     overlay:'black-light',
     header:'See what high school students thought of our workshop!',
-    text:'test',
+    info:'test',
     link:'https://www.youtube.com/watch?v=aXH86f3zAmk',
-    video:HSTestimonialVid,
+    highlightVideo:HSTestimonialVid,
+    fullVideo: fullHSTestimonialVid,
     vidType:'video/mp4',
+    iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1',
   }, {
     id: '5',
     img: DanyelTestimonial,
     overlay:'black-light',
     header:'Hear about Danyel Moulton’s experience of teaching with us!',
-    text:'test',
+    info:'test',
     link:'https://www.youtube.com/watch?v=ukisZIix9dY',
-    video:DanyelTestimonialVid,
+    highlightVideo: DanyelTestimonialVid,
+    fullVideo: fullDanyelTestimonialVid,
     vidType:'video/mp4',
+    iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1'
   },
 ];
 
 class VideoCarousel extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      interval:240000,
+    }
+  }
+
   render() {
     return (
         <Carousel
           activeItem={1}
           length={carouselData.length}
-          showControls={true}
+          showControls={false}
           showIndicators={true}
           className={"z-depth-1"}
           style={carouselUnit}
-          interval={10000}
+          interval={this.state.interval}
         >
           <CarouselInner>
           {carouselData.map(item=>(
             <CarouselItem itemId={item.id}>
-            <View>
-              <video controls muted className="video-fluid d-block" style={vid} autoPlay loop>
-                <source src={item.video} type={item.vidType} />
-              </video>
-              <Mask overlay={item.overlay}/>
-            </View>
-              <CarouselCaption style={caption}>
-                <h3 className="h3-responsive">{item.header}</h3>
-                <MDBBtn color="deep-purple"><a href={item.link} style={link}>Play Video</a></MDBBtn>
-              </CarouselCaption>
+            <HomeVidSection
+            header={item.header}
+            info={item.info}
+            highlightVideo={item.highlightVideo}
+            fullVideo={item.fullVideo}
+            vidType={item.vidType}
+            overlay={item.overlay}
+            link={item.link}
+            />
+
             </CarouselItem>
           ))}
           </CarouselInner>

@@ -29,7 +29,7 @@ const styles = theme => ({
 	},
 	Background:{
 		paddingTop:5,
-		color:'#14a37f',
+		color:'#3CDBC0',
 		fontSize: 13,
 	}
 });
@@ -39,7 +39,7 @@ function HomeTestimonialsCards(props) {
   return (
   		<Animation type={props.fadeType} reveal delay='0.3s'duration="0.4s">
        	<div className={classes.fullSection}> 
-			<Typography align='center' color='textPrimary' className={classes.Quote}>
+			<Typography align='left' color='textPrimary' className={classes.Quote}>
 				<b>{props.Quote}</b>
 			</Typography>
 			<Typography component='h1' variant='b2' align='right' color='textPrimary' className={classes.Source}>
