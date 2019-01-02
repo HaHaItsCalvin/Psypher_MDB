@@ -15,44 +15,44 @@ const styles = theme => ({
     backgroundRepeat:'no-repeat',
     width:'100%',
     height:'80vh',
-    backgroundPosition:'center',
     zIndex:"-1",
     backgroundPosition:'center',
     backgroundAttachment:'fixed',
-    opacity:0.85
+    opacity:0.85,
   },
   WhyText:{
     paddingLeft:'10vh',
     paddingRight:'10vh',
     paddingBottom:'5vh',
-    color:'#000000',
+    color:'#BDBDBD',
+    fontFamily:'Poppins',
+    fontWeight:'25px',
   },
 });
 
 function HomeWhySection(props) {
   const { classes } = props;
-  {/*Start Why Section */}
   return(
       <MDBView className={classes.WhyUnit} >
-        <MDBMask className='flex-center' overlay='white-strong' >
+        <MDBMask className='flex-center' overlay='black-strong' >
         <Animation type="slideInUp" reveal duration="1s">
           <Grid container direction='column' alignItems='center' justify='center' className={classes.WhyBody}>
             <Animation type="slideInUp" reveal duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b>The average <span style={{color:'#7700cf'}}> delay between </span>  the onset of <span style={{color:'#7700cf'}}>symptoms </span> of mental illness <span style={{color:'#7700cf'}}>and intervention</span> is </b></Typography>
+              <Typography variant='h5' className={classes.WhyText}> <b>The average <span style={{color:'#9575CD'}}> delay between </span>  the onset of <span style={{color:'#9575CD'}}>symptoms </span> of mental illness <span style={{color:'#9575CD'}}>and intervention</span> is </b></Typography>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.1s'duration="1s">
               <Animation type="pulse" infinite duration="3s">
-                <Typography variant='h2' className={classes.WhyText}> <span style={{color:'#7700cf'}}><b>8-10 YEARS...WHY?</b></span></Typography>
+                <Typography variant='h1' className={classes.WhyText}> <span style={{color:'#9575CD'}}><b>8-10 YEARS...WHY?</b></span></Typography>
               </Animation>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.2s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>It's time to innovate and reimagine</span> what mental health resources look like. </b></Typography>              
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#3CDBC0'}}>It's time to innovate and reimagine</span> what mental health resources look like. </b></Typography>              
             </Animation>
             <Animation type="slideInUp" reveal delay='0.3s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>We can't just react</span> to mental illness. </b></Typography>
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#3CDBC0'}}>We can't just react</span> to mental illness. </b></Typography>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.4s'duration="1s">
-              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#00695f'}}>We need to be proactive </span>about mental health. </b></Typography>
+              <Typography variant='h5' className={classes.WhyText}> <b><span style={{color:'#3CDBC0'}}>We need to be proactive </span>about mental health. </b></Typography>
             </Animation>
           </Grid>
           </Animation>

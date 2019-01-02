@@ -4,15 +4,11 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
-import OriginalVidSection from './HomeVideoOriginalSection.js';
-import HomeVidSection from './HomeVideoSection.js';
 import VideoCarousel from './HomeVideoCarousel.js';
 import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
@@ -101,7 +97,6 @@ const styles = theme => ({
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
     width:'100%',
-    backgroundPosition:'center',
     zIndex:"-1",
     backgroundPosition:'center',
     backgroundAttachment:'fixed',
@@ -129,7 +124,6 @@ const styles = theme => ({
     width:'100%',
     backgroundPosition:'center',
     zIndex:"-1",
-    backgroundPosition:'center',
     backgroundAttachment:'fixed',
   },
   testimonialHeader:{

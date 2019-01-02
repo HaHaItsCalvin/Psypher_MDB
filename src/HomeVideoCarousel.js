@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import {
   Carousel,
-  CarouselCaption,
   CarouselInner,
   CarouselItem,
-  View,
-  Mask,
-  Container
 } from "mdbreact";
-import { MDBBtn } from "mdbreact";
 
 import HomeVidSection from './HomeVideoSection.js';
 
@@ -35,13 +30,6 @@ const carouselUnit={
   height:'70vh',
   backgroundColor:'black',
 };
-const vid={
-  height:'70vh',
-  width:'100%',
-}
-const link={
-  color:'white',
-}
 
 const carouselData=[
   {

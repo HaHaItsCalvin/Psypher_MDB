@@ -1,9 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
-import { MDBMask, MDBView, MDBContainer,MDBBtn } from "mdbreact";
+import { MDBMask, MDBView,MDBBtn } from "mdbreact";
 const img={
 	maxHeight:'100%',
 	maxWidth:'100%',
@@ -33,12 +31,6 @@ const button={
 
 const buttonText={
   color:'white',
-};
-
-const clickMe={
-  color:'white',
-  lineHeight: '24px',
-  textAlign:'center',
 };
 
 class HomeMissionPics extends React.Component {

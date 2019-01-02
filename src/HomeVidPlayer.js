@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import {MDBBtn, View,Mask} from 'mdbreact';
+import {View,Mask} from 'mdbreact';
 
-import StigmasTestimonialVid from './StigmasTestimonialVid.mp4';
 
 
 const vid={
