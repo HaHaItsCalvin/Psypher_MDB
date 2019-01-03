@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import {View,Mask} from 'mdbreact';
 
-
-
 const vid={
 }
 

@@ -380,11 +380,15 @@ function HomePage(props) {
           </div>
 
         {/*Start Why Section */}
-        <HomeWhySection/>
+        <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
+          <HomeWhySection/>
+        </Animation>
 
 
         {/*Start Video Section */}
-        <VideoCarousel/>
+        <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
+          <VideoCarousel/>
+        </Animation>
 
 
       {/*Start Testimonials Section */}
