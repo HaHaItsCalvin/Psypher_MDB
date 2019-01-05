@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
+import ResourceMap from './ResourceMap.js';
 import VideoCarousel from './HomeVideoCarousel.js';
 import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
