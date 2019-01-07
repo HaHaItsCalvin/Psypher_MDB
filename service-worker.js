@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Psypher_MDB/precache-manifest.5ef9bee7e7e0a7cfa2e1d91d5bab0e96.js"
+  "/Psypher_MDB/precache-manifest.123aaf34ae28fccf3ad7e5911eaafebc.js"
 );
 
 workbox.clientsClaim();
