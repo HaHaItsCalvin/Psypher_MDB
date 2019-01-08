@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, Dropdown, DropdownToggle, DropdownMenu,  DropdownItem, Fa } from "mdbreact";
-import BackgroundPsypher from './Psypher.png';
+import BackgroundPsypher from './Media/Pictures/Psypher.png';
 import { MDBTooltip } from 'mdbreact';
 
 const navPsypher={

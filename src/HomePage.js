@@ -9,37 +9,35 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
-import VideoCarousel from './HomeVideoCarousel.js';
-import HomeMissionCards from './HomeMissionCards.js';
-import HomeTestimonialsCards from './HomeTestimonialsCards.js';
-import HomeMediaCards from './HomeMediaCards.js';
-import HomeMissionPics from './HomeMissionPics.js';
-import HomeStatsCards from './HomeStatsCard.js';
-import HomeWhySection from './HomeWhySection.js';
+import VideoCarousel from './HomeComponents/HomeVideoCarousel.js';
+import HomeMissionCards from './HomeComponents/HomeMissionCards.js';
+import HomeTestimonialsCards from './HomeComponents/HomeTestimonialsCards.js';
+import HomeMediaCards from './HomeComponents/HomeMediaCards.js';
+import HomeMissionPics from './HomeComponents/HomeMissionPics.js';
+import HomeStatsCards from './HomeComponents/HomeStatsCard.js';
+import HomeWhySection from './HomeComponents/HomeWhySection.js';
 
-import TestimonialsPic from './TestimonialsPic.jpg';
-import instaIcon from './instaIcon.jpg';
-import youtubeIcon from './youtubeIcon.jpg';
-import emailIcon from './emailIcon.jpg';
-import ContactUsBackground from './ContactUsBackground.png';
-import Background from './Background.png';
-import BackgroundPsypher from './Psypher.png';
-import StatsPic1 from './StatsPic1.jpg';
-import StatsPic2 from './StatsPic2.jpg';
-import StatsPic3 from './StatsPic3.jpg';
-import StatsPic4 from './StatsPic4.jpg';
-import WhyClockPic from './WhyClockPic.jpg';
-import StatsBackgroundPic from './StatsBackgroundPic.jpg';
-import MissionPic1 from './MissionPic1.jpg';
-import MissionPic2 from './MissionPic2.jpg';
-import MissionPic3 from './MissionPic3.jpg';
-import WorkshopPic1 from './Workshop1.jpg';
-import WorkshopPic2 from './Workshop2.jpg';
-import WorkshopPic3 from './Workshop3.jpg';
-import WorkshopPic4 from './Workshop4.jpg';
-import WorkshopPic5 from './Workshop5.jpg';
-import WorkshopPic6 from './Workshop6.jpg';
-//import Image from 'material-ui-image'
+import TestimonialsPic from './HomeComponents/Media/Pictures/TestimonialsPic.jpg';
+import instaIcon from './Media/Pictures/instaIcon.jpg';
+import youtubeIcon from './Media/Pictures/youtubeIcon.jpg';
+import emailIcon from './Media/Pictures/emailIcon.jpg';
+import ContactUsBackground from './HomeComponents/Media/Pictures/ContactUsBackground.png';
+import Background from './HomeComponents/Media/Pictures/Background.png';
+import BackgroundPsypher from './Media/Pictures/Psypher.png';
+import StatsPic1 from './HomeComponents/Media/Pictures/StatsPic1.jpg';
+import StatsPic2 from './HomeComponents/Media/Pictures/StatsPic2.jpg';
+import StatsPic3 from './HomeComponents/Media/Pictures/StatsPic3.jpg';
+import StatsPic4 from './HomeComponents/Media/Pictures/StatsPic4.jpg';
+import StatsBackgroundPic from './HomeComponents/Media/Pictures/StatsBackgroundPic.jpg';
+import MissionPic1 from './HomeComponents/Media/Pictures/MissionPic1.jpg';
+import MissionPic2 from './HomeComponents/Media/Pictures/MissionPic2.jpg';
+import MissionPic3 from './HomeComponents/Media/Pictures/MissionPic3.jpg';
+import WorkshopPic1 from './HomeComponents/Media/Pictures/Workshop1.jpg';
+import WorkshopPic2 from './HomeComponents/Media/Pictures/Workshop2.jpg';
+import WorkshopPic3 from './HomeComponents/Media/Pictures/Workshop3.jpg';
+import WorkshopPic4 from './HomeComponents/Media/Pictures/Workshop4.jpg';
+import WorkshopPic5 from './HomeComponents/Media/Pictures/Workshop5.jpg';
+import WorkshopPic6 from './HomeComponents/Media/Pictures/Workshop6.jpg';
 
 
 const styles = theme => ({
@@ -89,22 +87,6 @@ const styles = theme => ({
     backgroundRepeat:'no-repeat',
     width:'100%',
     backgroundPosition:'right',
-  },
-  WhyUnit:{
-    paddingTop:'10vh',
-    paddingBottom:50,
-    backgroundImage: `url(${WhyClockPic})`,
-    backgroundSize:'cover',
-    backgroundRepeat:'no-repeat',
-    width:'100%',
-    zIndex:"-1",
-    backgroundPosition:'center',
-    backgroundAttachment:'fixed',
-    opacity:0.6,
-  },
-  WhyText:{
-    paddingBottom:'5vh',
-    color:'purple',
   },
   videoUnit:{
     paddingTop:'7vh',

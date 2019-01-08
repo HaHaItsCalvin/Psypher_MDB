@@ -9,13 +9,13 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import {Fa} from 'mdbreact';
 
-import MiyukiKanada from './MiyukiKanada.jpg';
-import LisaGoldfein from './LisaGoldfein.JPG';
-import TracyBevington from './TracyBevington.jpg';
-import SeanYee from './SeanYee.jpg';
-import TuDevera from './TuDevera.jpg';
-import BeauFournier from './BeauFournier.jpg';
-import ArnelCalvario from './ArnelCalvario.JPG';
+import MiyukiKanada from './Media/Pictures/Partners/MiyukiKanada.jpg';
+import LisaGoldfein from './Media/Pictures/Partners/LisaGoldfein.JPG';
+import TracyBevington from './Media/Pictures/Partners/TracyBevington.jpg';
+import SeanYee from './Media/Pictures/Partners/SeanYee.jpg';
+import TuDevera from './Media/Pictures/Partners/TuDevera.jpg';
+import BeauFournier from './Media/Pictures/Partners/BeauFournier.jpg';
+import ArnelCalvario from './Media/Pictures/Partners/ArnelCalvario.JPG';
 
 
 const styles = theme => ({

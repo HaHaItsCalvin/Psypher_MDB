@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { MDBMask, MDBView } from "mdbreact";
 import { Animation } from "mdbreact";
 
-import WhyClockPic from './WhyClockPic.jpg';
+import WhyClockPic from './Media/Pictures/WhyClockPic.jpg';
 
 const styles = theme => ({
   WhyUnit:{

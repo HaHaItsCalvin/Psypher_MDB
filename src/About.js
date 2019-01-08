@@ -1,12 +1,12 @@
 import React from "react";
 import NavBar from './NavBar.js';
 import FooterNav from './Footer.js';
-import AboutFAQ from './AboutFAQs.js';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import AboutTeam from './AboutTeam';
+import AboutTeam from './AboutComponents/AboutTeam';
+import AboutFAQ from './AboutComponents/AboutFAQs.js';
 
 const styles = theme => ({
   aboutUnit:{
@@ -66,7 +66,8 @@ class About extends React.Component {
       <React.Fragment>
         <NavBar/>
         <main>
-          <AboutTeam/>
+      <AboutTeam/>
+
           <Grid container direction='row' style={{paddingLeft:'45px'}}>
             <Grid item xs={12} style={{paddingBottom:'25px', paddingTop:'20px',}}>
               <h1> Frequently Asked Questions </h1>

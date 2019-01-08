@@ -7,23 +7,17 @@ import {
 
 import HomeVidSection from './HomeVideoSection.js';
 
-import StigmasWorkshop from "./StigmasAtEDS.jpg";
-import StigmasTestimonial from "./StigmasTestimonial.jpg";
-import Glendale from "./Glendale.jpg";
-import HSTestimonial from "./HSTestimonial.jpg";
-import DanyelTestimonial from "./DanyelTestimonial.jpg";
+import StigmasVid from './Media/Videos/StigmasVid.mp4';
+import StigmasTestimonialVid from './Media/Videos//StigmasTestimonialVid.mp4';
+import GlendaleVid from './Media/Videos//GlendaleVid.mp4';
+import HSTestimonialVid from "./Media/Videos//HSTestimonialVid.mp4";
+import DanyelTestimonialVid from "./Media/Videos//DanyelTestimonialVid.mp4";
 
-import StigmasVid from './StigmasVid.mp4';
-import StigmasTestimonialVid from './StigmasTestimonialVid.mp4';
-import GlendaleVid from './GlendaleVid.mp4';
-import HSTestimonialVid from "./HSTestimonialVid.mp4";
-import DanyelTestimonialVid from "./DanyelTestimonialVid.mp4";
-
-import fullStigmasVid from './fullStigmasVid.mp4';
-import fullStigmasTestimonialVid from './fullStigmasTestimonialVid.mp4';
-import fullGlendaleVid from './fullGlendaleVid.mp4';
-import fullHSTestimonialVid from "./fullHSTestimonialVid.mp4";
-import fullDanyelTestimonialVid from "./fullDanyelTestimonialVid.mp4";
+import fullStigmasVid from './Media/Videos//fullStigmasVid.mp4';
+import fullStigmasTestimonialVid from './Media/Videos//fullStigmasTestimonialVid.mp4';
+import fullGlendaleVid from './Media/Videos//fullGlendaleVid.mp4';
+import fullHSTestimonialVid from "./Media/Videos//fullHSTestimonialVid.mp4";
+import fullDanyelTestimonialVid from "./Media/Videos//fullDanyelTestimonialVid.mp4";
 
 const carouselUnit={
   paddingTop:'5vh',
@@ -34,7 +28,6 @@ const carouselUnit={
 const carouselData=[
   {
     id: '1',
-    img: StigmasWorkshop,
     overlay:'black-light',
     header:'Mental Health Stigma Workshop',
     info:'Mental Health Stigma Workshop at Elements Dance Space in Pasadena',
@@ -46,7 +39,6 @@ const carouselData=[
   },  
   {
     id: '2',
-    img: StigmasTestimonial,
     overlay:'black-light',
     header:'Stigma Workshop Testimonial ',
     info:'test',
@@ -58,7 +50,6 @@ const carouselData=[
   },
   {
     id: '3',
-    img: Glendale,
     overlay:'black-light',
     header:'Social Media and Mental Health Workshop',
     info:'test',
@@ -70,7 +61,6 @@ const carouselData=[
   }, 
   {
     id: '4',
-    img: HSTestimonial,
     overlay:'black-light',
     header:'See what high school students thought of our workshop!',
     info:'test',
@@ -81,7 +71,6 @@ const carouselData=[
     iFrameSrc:'https://www.youtube.com/embed/ELVJ0K6Bdzo?&autoplay=1',
   }, {
     id: '5',
-    img: DanyelTestimonial,
     overlay:'black-light',
     header:'Hear about Danyel Moulton’s experience of teaching with us!',
     info:'test',

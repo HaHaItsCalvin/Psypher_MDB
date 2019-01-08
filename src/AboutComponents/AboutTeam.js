@@ -15,7 +15,11 @@ export default class TeamBios extends React.Component{
 		     <Stage width={window.innerWidth} height={window.innerHeight}>
 		       <Layer>
 		         <Text text="Try click on rect" />
-		         <Headshots />
+		         <Headshots 
+		         	profIMG='http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png'
+		         	danceIMG='https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg'
+
+		         />
 		       </Layer>
 		     </Stage>
 		     </div>
