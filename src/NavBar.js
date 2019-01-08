@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, Dropdown, DropdownToggle, DropdownMenu,  DropdownItem, Fa } from "mdbreact";
 import BackgroundPsypher from './Psypher.png';
+import { MDBTooltip } from 'mdbreact';
 
 const navPsypher={
         height:35,
@@ -57,9 +58,16 @@ state = {
                     <div className="d-none d-md-inline">Resources</div>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default"right>
-                    <DropdownItem href="#!">Nearby Resources</DropdownItem>
-                    <DropdownItem href="#!">Schedule</DropdownItem>
-                    <DropdownItem href="#!">Psypher at UCLA </DropdownItem>
+                    <DropdownItem href="/Resources">Nearby Resources</DropdownItem>
+                    <DropdownItem href="/Schedule">Schedule of Workshops</DropdownItem>
+                    <DropdownItem href="https://www.facebook.com/psypherucla/" target="_blank">
+                       <MDBTooltip
+                        placement="right"
+                        tag="div"
+                        tooltipContent="This link brings you to Psypher at UCLA's Facebook">
+                             Psypher at UCLA
+                        </MDBTooltip>
+                    </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
@@ -67,9 +75,9 @@ state = {
             <NavbarNav right>
             {socialMedia.map(item=>(
               <NavItem>
-                  <NavLink className="waves-effect waves-light" to={item.link}>
+                  <a href={item.link} target="_blank" style={{color:'white', padding:'10px'}}>
                     <Fa icon={item.icon} />
-                  </NavLink>
+                  </a>
               </NavItem>
               ))}
             </NavbarNav>

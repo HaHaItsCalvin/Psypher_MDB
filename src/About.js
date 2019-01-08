@@ -1,11 +1,12 @@
 import React from "react";
 import NavBar from './NavBar.js';
 import FooterNav from './Footer.js';
-import ResourceMap from './ResourceMap.js';
 import AboutFAQ from './AboutFAQs.js';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+
+import AboutTeam from './AboutTeam';
 
 const styles = theme => ({
   aboutUnit:{
@@ -65,10 +66,7 @@ class About extends React.Component {
       <React.Fragment>
         <NavBar/>
         <main>
-          <div >
-            <h1 align='center'> Test Map </h1>
-            <ResourceMap/>
-          </div>
+          <AboutTeam/>
           <Grid container direction='row' style={{paddingLeft:'45px'}}>
             <Grid item xs={12} style={{paddingBottom:'25px', paddingTop:'20px',}}>
               <h1> Frequently Asked Questions </h1>
@@ -83,8 +81,8 @@ class About extends React.Component {
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={8} med={8} lg={8} xl={8}>
-              <div id='General'>
+            <Grid item container direction='column' spacing={40} xs={12} sm={8} med={8} lg={8} xl={8}>
+              <Grid item id='General'>
               <h1>General </h1>
               {FAQsGeneral.map(item=>(  
                 <AboutFAQ
@@ -92,9 +90,9 @@ class About extends React.Component {
                   answer={item.answer}
                 />
                 ))}
-              </div>
+              </Grid>
 
-              <div id='Teaching'>
+              <Grid item id='Teaching'>
                 <h1> Teaching</h1>
                 {FAQsTeaching.map(item=>(  
                 <AboutFAQ
@@ -102,7 +100,7 @@ class About extends React.Component {
                   answer={item.answer}
                 />
                 ))}
-              </div>
+              </Grid>
 
             </Grid>
           </Grid>

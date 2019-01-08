@@ -6,6 +6,8 @@ import Home from './HomePage';
 import About from './About';
 import Partners from './Partners';
 import Workshops from './Workshops';
+import Schedule from './Schedule';
+import Resources from './Resources';
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
           <Route path="/About" component={About} />
           <Route path="/Partners" component={Partners} />
           <Route path="/Workshops" component={Workshops} />
+          <Route path="/Schedule" component={Schedule} />
+          <Route path="/Resources" component={Resources} />
       </div>
     </Router>
     )
