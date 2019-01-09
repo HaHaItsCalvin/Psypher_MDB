@@ -16,13 +16,13 @@ export default class HeadshotsKonva extends React.Component {
 
 /*For images you need to manually create a NEW native window via "new window.Image()" & specify "image src".*/
   componentDidMount() {
-    const activeImage = new window.Image();
-    activeImage.src = this.props.profIMG;
-    activeImage.onload = () => {
+    const profImage = new window.Image();
+    profImage.src = this.props.danceIMG;
+    profImage.onload = () => {
       // setState will redraw layer
       // because "image" property is changed
       this.setState({
-        image: activeImage
+        image: profImage
       });
     }; 
   }
@@ -34,9 +34,6 @@ export default class HeadshotsKonva extends React.Component {
         y={this.props.y}
         radius={this.props.radius}
         fillPatternImage={this.state.image}
-        fillPatternScaleX={this.props.fillPatternScaleX}
-        fillPatternScaleY={this.props.fillPatternScaleY}
-        fillPatternRepeat={this.props.fillPatternRepeat}
         shadowBlur={0}
         stroke={this.props.color}
         strokeWidth={this.props.strokeWidth}

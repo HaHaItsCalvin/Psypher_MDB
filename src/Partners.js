@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-import PartnerCards from './PartnerCards';
+import PartnerCards from './PartnersComponents/PartnerCards.js';
 
 const styles = theme => ({
   appBar: {

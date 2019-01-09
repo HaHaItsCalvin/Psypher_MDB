@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
+//Home Components
 import VideoCarousel from './HomeComponents/HomeVideoCarousel.js';
 import HomeMissionCards from './HomeComponents/HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeComponents/HomeTestimonialsCards.js';
@@ -17,13 +18,16 @@ import HomeMissionPics from './HomeComponents/HomeMissionPics.js';
 import HomeStatsCards from './HomeComponents/HomeStatsCard.js';
 import HomeWhySection from './HomeComponents/HomeWhySection.js';
 
+//General Media
+import instaIcon from './GeneralMedia/Pictures/instaIcon.jpg';
+import youtubeIcon from './GeneralMedia/Pictures/youtubeIcon.jpg';
+import emailIcon from './GeneralMedia/Pictures/emailIcon.jpg';
+import BackgroundPsypher from './GeneralMedia/Pictures/Psypher.png';
+
+//Home Media 
 import TestimonialsPic from './HomeComponents/Media/Pictures/TestimonialsPic.jpg';
-import instaIcon from './Media/Pictures/instaIcon.jpg';
-import youtubeIcon from './Media/Pictures/youtubeIcon.jpg';
-import emailIcon from './Media/Pictures/emailIcon.jpg';
 import ContactUsBackground from './HomeComponents/Media/Pictures/ContactUsBackground.png';
 import Background from './HomeComponents/Media/Pictures/Background.png';
-import BackgroundPsypher from './Media/Pictures/Psypher.png';
 import StatsPic1 from './HomeComponents/Media/Pictures/StatsPic1.jpg';
 import StatsPic2 from './HomeComponents/Media/Pictures/StatsPic2.jpg';
 import StatsPic3 from './HomeComponents/Media/Pictures/StatsPic3.jpg';
