@@ -153,10 +153,10 @@ function PartnerCards(props) {
                     title={card.Name}
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" component="h2" align="center">
                       {card.Name}
                     </Typography>
-                    <Typography>
+                    <Typography align="center">
                       {card.occupation}
                     </Typography>
                   <ul className="list-inline py-2">

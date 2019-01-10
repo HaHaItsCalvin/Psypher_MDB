@@ -37,7 +37,7 @@ export default class HeadshotsKonva extends React.Component {
         fillPatternScaleX={this.props.fillPatternScaleX}
         fillPatternScaleY={this.props.fillPatternScaleY}
         fillPatternRepeat={this.props.fillPatternRepeat}
-        shadowBlur={0}
+        shadowBlur={this.props.shadowBlur}
         stroke={this.props.color}
         strokeWidth={this.props.strokeWidth}
         onClick={() => this.props.onClick()}

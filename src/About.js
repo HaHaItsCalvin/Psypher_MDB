@@ -4,6 +4,7 @@ import FooterNav from './Footer.js';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Animation } from "mdbreact";
 
 import AboutTeam from './AboutComponents/AboutTeam';
 import AboutFAQ from './AboutComponents/AboutFAQs.js';
@@ -65,9 +66,13 @@ class About extends React.Component {
     return (
       <React.Fragment>
         <NavBar/>
-        <main>
-      <AboutTeam/>
-
+        <main> 
+        <Animation type="fadeIn" delay='0.5s'duration="0.8s">
+          <Grid container alignItems='center' justify='center' style={{paddingTop:'3vh'}}>
+            <Typography variant='h3'>Jump In to Psypher</Typography>
+          </Grid>
+         <AboutTeam/>
+        </Animation>
           <Grid container direction='row' style={{paddingLeft:'45px'}}>
             <Grid item xs={12} style={{paddingBottom:'25px', paddingTop:'20px',}}>
               <h1> Frequently Asked Questions </h1>

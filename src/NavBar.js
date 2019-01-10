@@ -58,14 +58,18 @@ state = {
                     <div className="d-none d-md-inline">Resources</div>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-default"right>
-                    <DropdownItem href="/Resources">Nearby Resources</DropdownItem>
-                    <DropdownItem href="/Schedule">Schedule of Workshops</DropdownItem>
-                    <DropdownItem href="https://www.facebook.com/psypherucla/" target="_blank">
+                    <NavLink to="/Resources">
+                      <DropdownItem >Nearby Resources</DropdownItem>
+                    </NavLink>
+                    <NavLink to="/Schedule">
+                      <DropdownItem>Schedule of Workshops</DropdownItem>
+                    </NavLink>
+                      <DropdownItem href="https://www.facebook.com/psypherucla/" target="_blank">
                        <MDBTooltip
                         placement="right"
                         tag="div"
                         tooltipContent="This link brings you to Psypher at UCLA's Facebook">
-                             Psypher at UCLA
+                             <b style={{paddingLeft:'20px'}}>Psypher at UCLA</b>
                         </MDBTooltip>
                     </DropdownItem>
                   </DropdownMenu>

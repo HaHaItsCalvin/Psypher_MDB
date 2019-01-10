@@ -9,6 +9,15 @@ import MidRect from './AboutMidRect.js';
 
 import introRectPic from './Media/Pictures/Test.png';
 
+import CanvasBackground from './Media/Pictures/Test.png';
+
+const CanvasUnit={
+	paddingTop:'5vh',
+    backgroundImage: `url(${CanvasBackground})`,
+    backgroundSize:'contain',
+    backgroundRepeat:'no-repeat',
+};
+
 //Change this value to determine how large the radius of the circle is, relative to the screen size
 const radialDivider=13.5;
 const headshotData=[
@@ -21,6 +30,8 @@ const headshotData=[
      	xScaler:'0.125', 
      	yScaler:'0.388', 
      	strokeWidth:'10',
+     	fill:'teal',
+     	text:'Test1',
 	},
 	{
 		id:'1',
@@ -29,6 +40,7 @@ const headshotData=[
      	xScaler:'.1875',	
      	yScaler:'.222',	
      	strokeWidth:'10',
+     	text:'Test2',
 	},
 	{
 		id:'2',
@@ -93,6 +105,7 @@ const headshotData=[
      	xScaler:'0.188',	
      	yScaler:'0.556',	
      	strokeWidth:'10',
+     	text:'Lian Neeson; Friendly Neighborhood Special Agent, Stalker, and Badass Father; I will find you & I Will kill you'
 	},
 ];
 
@@ -107,6 +120,7 @@ export default class TeamBios extends React.Component{
 		};
 	}
 
+	//handles state transitions whenever a headShot Profile is clicked
 	handleClick(i,arrayData){
 	  	if (this.state.activeHeadshot!=i){
 		  	console.log("CLICKED HEADSHOT")
@@ -123,11 +137,13 @@ export default class TeamBios extends React.Component{
 	  			highlightMode:false,
 	  			headShotsColor:headShotsColor, 
 	  			activeHeadshot:i,
-	  			rectIMG: arrayData[i].danceIMG
+	  			rectIMG: arrayData[i].danceIMG,
+	  			text: arrayData[i].text,
 	  		});
 		  }
 	}
 
+	//function that renders the headShots upon loading of webpage
 	renderHeadshot(indexNum,arrayData){
 		return(
 			<Headshots
@@ -137,21 +153,20 @@ export default class TeamBios extends React.Component{
 	         	y={window.innerHeight*arrayData[indexNum].yScaler}
 	         	onClick={() => this.handleClick(indexNum,arrayData)}
 	         	strokeWidth={arrayData[indexNum].strokeWidth}
+		        fill={arrayData[indexNum].fill}
 	         	color={this.state.headShotsColor[indexNum]}
 	         	radius={window.innerHeight/radialDivider}
 	         	fillPatternScaleX={0.25}
 		        fillPatternScaleY={0.2}
 		        fillPatternRepeat={'no-repeat'}
+		        shadowBlur={5}
 			/>
 			)
 	}
 
 	render(){
 		return(
-			<div>
-			<Grid container alignItems='center' justify='center' style={{paddingTop:'3vh'}}>
-				<Typography variant='h3'>Jump In to Psypher</Typography>
-			</Grid>
+			<div style={CanvasUnit}>
 			{/*100 is arbitrarily taken from innerWidth so there's no scroll bar on the bottom*/}
 		     <Stage width={window.innerWidth-15} height={window.innerHeight/1.2}>
 		       <Layer>
@@ -202,6 +217,16 @@ export default class TeamBios extends React.Component{
 		         	height={window.innerHeight/3}
 		         	opacity={0.8}
 		         	fill={'teal'}
+		         />
+		         <Text
+		         	x={window.innerWidth/2.2}
+		         	y={window.innerHeight/4}
+		         	width={window.innerWidth/4}
+		         	height={window.innerHeight/3}
+		         	text={this.state.text}
+		         	fontSize={30}
+		         	fontFamily='sans-seriff'
+		         	fill={'black'}
 		         />
 		         </>
 		     }

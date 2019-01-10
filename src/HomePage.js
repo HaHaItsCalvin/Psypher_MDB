@@ -17,6 +17,7 @@ import HomeMediaCards from './HomeComponents/HomeMediaCards.js';
 import HomeMissionPics from './HomeComponents/HomeMissionPics.js';
 import HomeStatsCards from './HomeComponents/HomeStatsCard.js';
 import HomeWhySection from './HomeComponents/HomeWhySection.js';
+import HomeMessaingSection from './HomeComponents/HomeMessaging.js';
 
 //General Media
 import instaIcon from './GeneralMedia/Pictures/instaIcon.jpg';
@@ -127,11 +128,15 @@ const styles = theme => ({
     backgroundPosition:'left',
   },
   contactHeader:{
-    paddingBottom:'12vh',
+    paddingBottom:'5vh',
     paddingLeft:'15vh',
     paddingTop:'5vh',
   },
+  ContactMessagingBody:{
+    paddingLeft:'20vh',
+  },
   ContactMediaBody:{
+    paddingTop:'5vh',
     paddingLeft:'20vh',
   },
   layout: {
@@ -193,6 +198,7 @@ function HomePage(props) {
           
           <main>
           {/*Home Banner Section*/}
+
         <Grid container direction='column' justify="center" alignItems="center" className={classes.topPicContainer} xs={12} sm={12} med={12}> 
           <Grid className={classes.topPsypherPic}> </Grid>
         </Grid>
@@ -425,6 +431,9 @@ function HomePage(props) {
           <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
             <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
           </Animation>
+          <Grid container direction='column' alignItems='center' justify='center' className={classes.ContactMessagingBody}>
+            <HomeMessaingSection/>
+          </Grid>
             <Grid container spacing={40} direction='row' justify='center' alignItems='center' className={classes.ContactMediaBody}>
               <Grid item xs={12} sm={12} med={3} lg={3} xl={3}>
                 <HomeMediaCards 

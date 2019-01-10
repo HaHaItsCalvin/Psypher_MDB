@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from './NavBar.js';
 import FooterNav from './Footer.js';
-import ResourceMap from './ResourceMap.js';
+import ResourceMap from './ResourcesComponents/ResourceMap.js';
 
 class Resources extends React.Component {
   render() {
