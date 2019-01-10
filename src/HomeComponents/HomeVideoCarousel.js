@@ -23,6 +23,7 @@ const carouselUnit={
   paddingTop:'5vh',
   height:'70vh',
   backgroundColor:'black',
+  paddingBottom:'7vh'
 };
 
 const carouselData=[

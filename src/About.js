@@ -68,7 +68,7 @@ class About extends React.Component {
         <NavBar/>
         <main> 
         <Animation type="fadeIn" delay='0.5s'duration="0.8s">
-          <Grid container alignItems='center' justify='center' style={{paddingTop:'3vh'}}>
+          <Grid container alignItems='center' justify='center' >
             <Typography variant='h3'>Jump In to Psypher</Typography>
           </Grid>
          <AboutTeam/>

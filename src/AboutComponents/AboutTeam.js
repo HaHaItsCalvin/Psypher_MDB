@@ -18,8 +18,11 @@ const CanvasUnit={
     backgroundRepeat:'no-repeat',
 };
 
+
 //Change this value to determine how large the radius of the circle is, relative to the screen size
 const radialDivider=13.5;
+//const offsetToEliminateScrollBar --> Find where <Stage> is defined & change the offset for window.innerWidth
+
 const headshotData=[
 	//xScaler affects the horizontal
 	//yScaler affects the vertical
@@ -168,7 +171,7 @@ export default class TeamBios extends React.Component{
 		return(
 			<div style={CanvasUnit}>
 			{/*100 is arbitrarily taken from innerWidth so there's no scroll bar on the bottom*/}
-		     <Stage width={window.innerWidth-15} height={window.innerHeight/1.2}>
+		     <Stage width={window.innerWidth-20} height={window.innerHeight/1.2}>
 		       <Layer>
 		       	 {/*Constructed starting with zero on the 9 O'clock position & going clockwise*/}
 

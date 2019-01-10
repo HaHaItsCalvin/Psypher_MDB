@@ -55,7 +55,7 @@ const styles = theme => ({
     width:'100%',
     maxHeight:'937px',
     backgroundPosition:'center',
-    backgroundAttachment:'fixed'
+    backgroundAttachment:'fixed',
   },
   topPsypherPic:{
     backgroundImage: `url(${BackgroundPsypher})`,
@@ -118,19 +118,19 @@ const styles = theme => ({
     paddingBottom:'12vh', 
   },
   contactUnit:{
-    paddingTop:'10vh',
     paddingLeft: '5vh',
     paddingRight:'5vh',
-    paddingBottom:'20vh',
     backgroundImage: `url(${ContactUsBackground})`,
     backgroundSize:'contain',
     backgroundRepeat:'no-repeat',
     backgroundPosition:'left',
+    paddingTop:'5vh',
+    backgroundColor:'white'
   },
   contactHeader:{
+    paddingTop:'5vh',
     paddingBottom:'5vh',
     paddingLeft:'15vh',
-    paddingTop:'5vh',
   },
   ContactMessagingBody:{
     paddingLeft:'20vh',
@@ -427,7 +427,7 @@ function HomePage(props) {
         </div>
 
       {/*Start ContactUs Section*/}
-        <div className={classes.contactUnit}>
+        <div className={classes.contactUnit} id="ContactUs">
           <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
             <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
           </Animation>

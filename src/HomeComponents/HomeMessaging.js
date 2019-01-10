@@ -1,9 +1,12 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import { Animation } from "mdbreact";
 
 const MessagingForm = () => {
   return (
         <MDBCol md="6">
+
+          <Animation type="fadeIn" reveal delay='0.5s'duration="0.8s">
           <form>
             <div className="teal-text">
               <MDBInput
@@ -46,6 +49,7 @@ const MessagingForm = () => {
               </MDBBtn>
             </div>
           </form>
+          </Animation>
         </MDBCol>
   );
 };

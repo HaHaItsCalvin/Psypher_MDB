@@ -33,7 +33,8 @@ state = {
     }));
   render() {
     return (
-      <Navbar color="black" dark expand="md" >
+      <div style={{paddingBottom:'77px'}}>
+      <Navbar color="black" dark expand="md" fixed='top'>
           <NavbarBrand>
             <NavLink to={process.env.PUBLIC_URL+'/'}><img src={BackgroundPsypher} style={navPsypher}/></NavLink>
           </NavbarBrand>
@@ -75,6 +76,9 @@ state = {
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
+              <NavItem style={{paddingTop:9, paddingLeft:4}}>
+                <a href="/Home#ContactUs" style={{color:'white'}}>Contact Us</a>
+              </NavItem>
             </NavbarNav>
             <NavbarNav right>
             {socialMedia.map(item=>(
@@ -87,6 +91,7 @@ state = {
             </NavbarNav>
           </Collapse>
       </Navbar>
+      </div>
     );
   }
 }
