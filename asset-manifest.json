@@ -1,14 +1,14 @@
 {
   "main.css": "/Psypher_MDB/static/css/main.cad8274e.chunk.css",
-  "main.js": "/Psypher_MDB/static/js/main.b75ccd42.chunk.js",
-  "main.js.map": "/Psypher_MDB/static/js/main.b75ccd42.chunk.js.map",
+  "main.js": "/Psypher_MDB/static/js/main.7fe9e650.chunk.js",
+  "main.js.map": "/Psypher_MDB/static/js/main.7fe9e650.chunk.js.map",
   "static/css/1.8c141bf0.chunk.css": "/Psypher_MDB/static/css/1.8c141bf0.chunk.css",
-  "static/js/1.76f294bc.chunk.js": "/Psypher_MDB/static/js/1.76f294bc.chunk.js",
-  "static/js/1.76f294bc.chunk.js.map": "/Psypher_MDB/static/js/1.76f294bc.chunk.js.map",
+  "static/js/1.83e1546a.chunk.js": "/Psypher_MDB/static/js/1.83e1546a.chunk.js",
+  "static/js/1.83e1546a.chunk.js.map": "/Psypher_MDB/static/js/1.83e1546a.chunk.js.map",
   "runtime~main.js": "/Psypher_MDB/static/js/runtime~main.986a3480.js",
   "runtime~main.js.map": "/Psypher_MDB/static/js/runtime~main.986a3480.js.map",
-  "static/media/Psypher.png": "/Psypher_MDB/static/media/Psypher.cf03613b.png",
   "static/media/Test.png": "/Psypher_MDB/static/media/Test.9a3cc750.png",
+  "static/media/Psypher.png": "/Psypher_MDB/static/media/Psypher.cf03613b.png",
   "static/media/StigmasVid.mp4": "/Psypher_MDB/static/media/StigmasVid.b1301b7e.mp4",
   "static/media/StigmasTestimonialVid.mp4": "/Psypher_MDB/static/media/StigmasTestimonialVid.52123efe.mp4",
   "static/media/GlendaleVid.mp4": "/Psypher_MDB/static/media/GlendaleVid.2e9271eb.mp4",
@@ -44,6 +44,6 @@
   "static/css/main.cad8274e.chunk.css.map": "/Psypher_MDB/static/css/main.cad8274e.chunk.css.map",
   "static/css/1.8c141bf0.chunk.css.map": "/Psypher_MDB/static/css/1.8c141bf0.chunk.css.map",
   "index.html": "/Psypher_MDB/index.html",
-  "precache-manifest.af1f38a63cb05a302ad35689e2633a54.js": "/Psypher_MDB/precache-manifest.af1f38a63cb05a302ad35689e2633a54.js",
+  "precache-manifest.4da9eb2727209799d82c8e1ff158685c.js": "/Psypher_MDB/precache-manifest.4da9eb2727209799d82c8e1ff158685c.js",
   "service-worker.js": "/Psypher_MDB/service-worker.js"
 }
