@@ -125,7 +125,8 @@ const styles = theme => ({
     backgroundRepeat:'no-repeat',
     backgroundPosition:'left',
     paddingTop:'5vh',
-    backgroundColor:'white'
+    backgroundColor:'white',
+    paddingBottom:'3vh',
   },
   contactHeader:{
     paddingTop:'5vh',

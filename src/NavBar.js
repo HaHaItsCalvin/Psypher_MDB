@@ -80,6 +80,7 @@ state = {
                 <a href="/Home#ContactUs" style={{color:'white'}}>Contact Us</a>
               </NavItem>
             </NavbarNav>
+
             <NavbarNav right>
             {socialMedia.map(item=>(
               <NavItem>
@@ -89,6 +90,7 @@ state = {
               </NavItem>
               ))}
             </NavbarNav>
+            
           </Collapse>
       </Navbar>
       </div>

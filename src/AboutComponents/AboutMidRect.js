@@ -8,10 +8,13 @@ import Test from './Media/Pictures/Test.png';
 
 
 export default class MidRect extends React.Component {
-  state = {
+  constructor(props){
+  super(props);
+  this.state = {
     color: 'black',
     image: null,
   };
+}
 
 /*For images you need to manually create a NEW native window via "new window.Image()" & specify "image src".*/
   componentDidMount() {
@@ -25,12 +28,11 @@ export default class MidRect extends React.Component {
       });
     }; 
   }
-
   //Necessary to trigger re-render when the IMG Props passed to 
   //this rectangle is updated due to a clicked Headshot
   componentDidUpdate(){
     const danceIMG = new window.Image();
-    danceIMG.src = this.props.danceIMG;
+    danceIMG.src = this.props.profIMG;
     danceIMG.onload = () => {
       this.setState({
         image: danceIMG

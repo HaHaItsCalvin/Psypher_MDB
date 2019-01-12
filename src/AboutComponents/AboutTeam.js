@@ -14,7 +14,7 @@ import CanvasBackground from './Media/Pictures/Test.png';
 const CanvasUnit={
 	paddingTop:'5vh',
     backgroundImage: `url(${CanvasBackground})`,
-    backgroundSize:'contain',
+    backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
 };
 
@@ -136,13 +136,13 @@ export default class TeamBios extends React.Component{
 	  		headShotsColor[i]='teal'
 	  		if (this.state.activeHeadshot!=null)
 	  			headShotsColor[this.state.activeHeadshot]='black'
-	  		this.setState({
-	  			highlightMode:false,
-	  			headShotsColor:headShotsColor, 
-	  			activeHeadshot:i,
-	  			rectIMG: arrayData[i].danceIMG,
-	  			text: arrayData[i].text,
-	  		});
+		  		this.setState({
+		  			highlightMode:false,
+		  			headShotsColor:headShotsColor, 
+		  			activeHeadshot:i,
+		  			rectIMG: arrayData[i].danceIMG,
+		  			text: arrayData[i].text,
+		  		});
 		  }
 	}
 
@@ -162,7 +162,6 @@ export default class TeamBios extends React.Component{
 	         	fillPatternScaleX={0.25}
 		        fillPatternScaleY={0.2}
 		        fillPatternRepeat={'no-repeat'}
-		        shadowBlur={5}
 			/>
 			)
 	}

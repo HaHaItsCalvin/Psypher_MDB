@@ -8,11 +8,13 @@ import Test from './Media/Pictures/Test.png';
 
 
 export default class HeadshotsKonva extends React.Component {
-  state = {
-    color: 'black',
-    image: null,
-  };
-
+  constructor(props){
+    super(props);
+      this.state={
+        color: 'black',
+        image: null,
+      };
+    }
 
 /*For images you need to manually create a NEW native window via "new window.Image()" & specify "image src".*/
   componentDidMount() {
