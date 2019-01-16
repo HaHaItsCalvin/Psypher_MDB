@@ -1,13 +1,8 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
-import Typography from '@material-ui/core/Typography';
-import { Stage, Layer, Rect, Text, Circle, Image } from 'react-konva';
-import Konva from 'konva';
+import { Stage, Layer, Text} from 'react-konva';
 
 import Headshots from './AboutTeamHeadshots.js';
 import MidRect from './AboutMidRect.js';
-
-import introRectPic from './Media/Pictures/Test.png';
 
 import CanvasBackground from './Media/Pictures/Test.png';
 
@@ -32,7 +27,7 @@ const headshotData=[
      	danceIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
      	xScaler:'0.125', 
      	yScaler:'0.388', 
-     	strokeWidth:'10',
+     	strokeWidth:'9',
      	fill:'teal',
      	text:'Test1',
 	},
@@ -42,7 +37,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'.1875',	
      	yScaler:'.222',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
      	text:'Test2',
 	},
 	{
@@ -51,7 +46,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.386',	
      	yScaler:'0.111',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'3',
@@ -59,7 +54,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.588',	
      	yScaler:'0.111',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'4',
@@ -67,7 +62,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.788',	
      	yScaler:'0.222',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'5',
@@ -75,7 +70,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.85',
      	yScaler:'0.388',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'6',
@@ -83,7 +78,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.7875',	
      	yScaler:'0.556',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'7',
@@ -91,7 +86,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.588',	
      	yScaler:'0.722',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'8',
@@ -99,7 +94,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.385',	
      	yScaler:'0.722',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
 	},
 	{
 		id:'9',
@@ -107,7 +102,7 @@ const headshotData=[
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.188',	
      	yScaler:'0.556',	
-     	strokeWidth:'10',
+     	strokeWidth:'9',
      	text:'Lian Neeson; Friendly Neighborhood Special Agent, Stalker, and Badass Father; I will find you & I Will kill you'
 	},
 ];
@@ -125,7 +120,7 @@ export default class TeamBios extends React.Component{
 
 	//handles state transitions whenever a headShot Profile is clicked
 	handleClick(i,arrayData){
-	  	if (this.state.activeHeadshot!=i){
+	  	if (this.state.activeHeadshot!==i){
 		  	console.log("CLICKED HEADSHOT")
 		  	console.log(i)
 		  	console.log("ACTIVE HEADSHOT WAS:")
@@ -134,7 +129,7 @@ export default class TeamBios extends React.Component{
 
 	  		const headShotsColor=this.state.headShotsColor.slice();
 	  		headShotsColor[i]='teal'
-	  		if (this.state.activeHeadshot!=null)
+	  		if (this.state.activeHeadshot!==null)
 	  			headShotsColor[this.state.activeHeadshot]='black'
 		  		this.setState({
 		  			highlightMode:false,

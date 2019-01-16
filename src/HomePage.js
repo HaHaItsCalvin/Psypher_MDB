@@ -32,7 +32,7 @@ import Background from './HomeComponents/Media/Pictures/Background.png';
 import StatsPic1 from './HomeComponents/Media/Pictures/StatsPic1.jpg';
 import StatsPic2 from './HomeComponents/Media/Pictures/StatsPic2.jpg';
 import StatsPic3 from './HomeComponents/Media/Pictures/StatsPic3.jpg';
-import StatsPic4 from './HomeComponents/Media/Pictures/StatsPic4.jpg';
+import StatsPic4 from './HomeComponents/Media/Pictures/StatsPic4.png';
 import StatsBackgroundPic from './HomeComponents/Media/Pictures/StatsBackgroundPic.jpg';
 import MissionPic1 from './HomeComponents/Media/Pictures/MissionPic1.jpg';
 import MissionPic2 from './HomeComponents/Media/Pictures/MissionPic2.jpg';
@@ -61,7 +61,7 @@ const styles = theme => ({
     backgroundImage: `url(${BackgroundPsypher})`,
     backgroundSize:'contain',
     backgroundRepeat:'no-repeat',
-    height:"40vh",
+    height:"60vh",
     width:'100%',
     backgroundPosition:'top',
   },
@@ -83,6 +83,7 @@ const styles = theme => ({
     paddingLeft: '13vh',
     paddingRight:'13vh',
     paddingBottom:50,
+    backgroundColor:'white',
   },
   Statistics:{
     paddingTop:'8vh',
@@ -92,6 +93,7 @@ const styles = theme => ({
     backgroundRepeat:'no-repeat',
     width:'100%',
     backgroundPosition:'right',
+    backgroundColor:'white'
   },
   videoUnit:{
     paddingTop:'7vh',

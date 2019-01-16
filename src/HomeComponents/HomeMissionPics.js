@@ -63,7 +63,7 @@ class HomeMissionPics extends React.Component {
         onMouseLeave={()=>this.handleMouseLeave()}
       >
         <MDBView > 
-          <img style={img} src={this.props.img}/>
+          <img style={img} src={this.props.img} alt={this.props.info}/>
         <MDBMask overlay={ this.state.showClickable ? 'black-strong' : 'none'  }/>
         </MDBView>
         <div style={textBlock}>
@@ -74,7 +74,7 @@ class HomeMissionPics extends React.Component {
                  {this.state.showClickable ? this.props.info : null} 
             </Typography>
             <div style={button}>
-                  {this.state.showClickable ? <a href={this.props.link} target="_blank" > <MDBBtn color='btn aqua-gradient waves-effect' style={buttonText}> VIDEO </MDBBtn> </a>: null} 
+                  {this.state.showClickable ? <a href={this.props.link} target="_blank" rel='noopener noreferrer'> <MDBBtn color='btn aqua-gradient waves-effect' style={buttonText}> VIDEO </MDBBtn> </a>: null} 
             </div>
        	</div>
       </div>

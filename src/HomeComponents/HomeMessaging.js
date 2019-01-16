@@ -1,44 +1,53 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import {  MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+
+const InputLabels=[
+  {
+    label:"Your name",
+    icon:"user",
+    type:"text",
+    error:"wrong",
+    success:"right",
+  },
+  {
+
+    label:"Your email",
+    icon:"envelope",
+    type:"email",
+    error:"wrong",
+    success:"right",
+  },
+  {
+    label:"Subject",
+    icon:"tag",
+    type:"text",
+    error:"wrong",
+    success:"right",
+  },
+  {
+    type:"textarea",
+    rows:"2",
+    label:"Your message",
+    icon:"pencil",
+  },
+]
 
 const MessagingForm = () => {
   return (
         <MDBCol md="6">
           <form>
             <div className="teal-text">
+            {InputLabels.map(item=>(
               <MDBInput
-                label="Your name"
-                icon="user"
+                label={item.label}
+                icon={item.icon}
                 group
-                type="text"
-                validate
-                error="wrong"
-                success="right"
+                type={item.type}
+                validate 
+                error={item.error}
+                success={item.success}
               />
-              <MDBInput
-                label="Your email"
-                icon="envelope"
-                group
-                type="email"
-                validate
-                error="wrong"
-                success="right"
-              />
-              <MDBInput
-                label="Subject"
-                icon="tag"
-                group
-                type="text"
-                validate
-                error="wrong"
-                success="right"
-              />
-              <MDBInput
-                type="textarea"
-                rows="2"
-                label="Your message"
-                icon="pencil"
-              />
+            ))}
             </div>
             <div className="text-center">
               <MDBBtn outline color="teal">

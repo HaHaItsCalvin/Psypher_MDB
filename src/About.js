@@ -3,20 +3,11 @@ import NavBar from './NavBar.js';
 import FooterNav from './Footer.js';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import { Animation } from "mdbreact";
 
 import AboutTeam from './AboutComponents/AboutTeam';
 import AboutFAQ from './AboutComponents/AboutFAQs.js';
 
-const styles = theme => ({
-  aboutUnit:{
-
-  },
-  FAQUnit:{
-    paddingTop:'60vh',
-  },
-});
 
 const Menu=[
   {
@@ -73,42 +64,43 @@ class About extends React.Component {
           </Grid>
          <AboutTeam/>
         </Animation>
-          <Grid container direction='row' style={{paddingLeft:'45px'}}>
-            <Grid item xs={12} style={{paddingBottom:'25px', paddingTop:'20px',}}>
-              <h1> Frequently Asked Questions </h1>
-            </Grid>
 
-            <Grid item xs={12} sm={3} med={3} lg={3} xl={3} style={{paddingRight:'20px'}}>
-              {Menu.map(menuItem=>(
-                   <Typography variant='h6' style={{ paddingBottom:'10px',paddingTop:'10px', borderBottom: '0.1em solid lightgrey' }}>
-                     <a href={menuItem.Link} style={{color:'black'}}>{menuItem.Title}</a>
-                   </Typography>
-              
+        <Grid container direction='row' style={{paddingLeft:'45px'}}>
+          <Grid item xs={12} style={{paddingBottom:'25px', paddingTop:'20px',}}>
+            <h1> Frequently Asked Questions </h1>
+          </Grid>
+
+          <Grid item xs={12} sm={3} med={3} lg={3} xl={3} style={{paddingRight:'20px'}}>
+            {Menu.map(menuItem=>(
+                 <Typography variant='h6' style={{ paddingBottom:'10px',paddingTop:'10px', borderBottom: '0.1em solid lightgrey' }}>
+                   <a href={menuItem.Link} style={{color:'black'}}>{menuItem.Title}</a>
+                 </Typography>
+            
+            ))}
+          </Grid>
+
+          <Grid item container direction='column' spacing={40} xs={12} sm={8} med={8} lg={8} xl={8}>
+            <Grid item id='General'>
+            <h1>General </h1>
+            {FAQsGeneral.map(item=>(  
+              <AboutFAQ
+                question={item.question}
+                answer={item.answer}
+              />
               ))}
             </Grid>
 
-            <Grid item container direction='column' spacing={40} xs={12} sm={8} med={8} lg={8} xl={8}>
-              <Grid item id='General'>
-              <h1>General </h1>
-              {FAQsGeneral.map(item=>(  
-                <AboutFAQ
-                  question={item.question}
-                  answer={item.answer}
-                />
-                ))}
-              </Grid>
-
-              <Grid item id='Teaching'>
-                <h1> Teaching</h1>
-                {FAQsTeaching.map(item=>(  
-                <AboutFAQ
-                  question={item.question}
-                  answer={item.answer}
-                />
-                ))}
-              </Grid>
-
+            <Grid item id='Teaching'>
+              <h1> Teaching</h1>
+              {FAQsTeaching.map(item=>(  
+              <AboutFAQ
+                question={item.question}
+                answer={item.answer}
+              />
+              ))}
             </Grid>
+
+          </Grid>
           </Grid>
         </main>
         <FooterNav/>

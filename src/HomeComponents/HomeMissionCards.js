@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import {createMuiTheme } from '@material-ui/core/styles';
 
 const styles = theme => ({
   img:{
@@ -14,26 +13,12 @@ const styles = theme => ({
   	position:'center,'
   },
 });
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: '#757ce8',
-      main: '#212121',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-    secondary: {
-      main: '#9900ff',
-      contrastText: '#000',
-    },
-  },
-});
 function HomeMissionCards(props) {
   const { classes } = props;
   return (
       <Grid container direction='column ' alignItems='center' justify='center'> 
      	  <Grid item>
-        <img src={props.img} className={classes.img}/>
+        <img src={props.img} className={classes.img} alt={props.phrase}/>
         <Typography align='center' color='primary'>
              <b>{props.keyword}</b>
 		     </Typography>

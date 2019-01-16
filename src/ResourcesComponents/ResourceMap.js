@@ -10,7 +10,7 @@ import {
 import Typography from '@material-ui/core/Typography';
 
 
-{/* Code was forked from https://gist.github.com/jwo/43b382fc60eb09d3a415c9953f4057f8#file-map-js*/}
+/* Code was forked from https://gist.github.com/jwo/43b382fc60eb09d3a415c9953f4057f8#file-map-js*/
 const MapWithAMarker = compose(withScriptjs, withGoogleMap)(props => {
   return (
     <GoogleMap 

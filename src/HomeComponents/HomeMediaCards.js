@@ -21,7 +21,9 @@ function HomeMediaCards(props) {
 
         <div>
             <Animation type="fadeIn" reveal delay={props.delay} duration="0.8s">
-            <a href={props.link} target="_blank"> <img  src={props.img} className={classes.img}/> </a>
+            <a href={props.link} target="_blank" rel='noopener noreferrer'> 
+              <img  src={props.img} className={classes.img} alt={props.Title}/> 
+            </a>
             <Typography align='center' className={classes.bold} variant='h6'>
               <b>{props.Title}</b>
             </Typography>

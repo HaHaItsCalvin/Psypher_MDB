@@ -1,17 +1,10 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Stage, Layer, Rect,Circle,Image} from 'react-konva';
-import Konva from 'konva';
-
-import Test from './Media/Pictures/Test.png';
-
-
+import React from 'react';
+import { Circle} from 'react-konva';
 
 export default class HeadshotsKonva extends React.Component {
   constructor(props){
     super(props);
       this.state={
-        color: 'black',
         image: null,
       };
     }
@@ -47,4 +40,3 @@ export default class HeadshotsKonva extends React.Component {
     );
   }
 }
-

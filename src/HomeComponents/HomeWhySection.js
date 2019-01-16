@@ -35,9 +35,9 @@ function HomeWhySection(props) {
   return(
       <MDBView className={classes.WhyUnit} >
         <MDBMask className='flex-center' overlay='black-strong' >
-        <Animation type="slideInUp" reveal duration="1s">
+        <Animation type="fadeInUp" reveal duration="1s">
           <Grid container direction='column' alignItems='center' justify='center' className={classes.WhyBody}>
-            <Animation type="slideInUp" reveal duration="1s">
+            <Animation type="fadeInUp" reveal duration="1s">
               <Typography variant='h5' className={classes.WhyText}> <b>The average <span style={{color:'#9575CD'}}> delay between </span>  the onset of <span style={{color:'#9575CD'}}>symptoms </span> of mental illness <span style={{color:'#9575CD'}}>and intervention</span> is </b></Typography>
             </Animation>
             <Animation type="slideInUp" reveal delay='0.1s'duration="1s">

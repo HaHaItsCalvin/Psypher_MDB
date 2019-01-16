@@ -1,9 +1,5 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
 import { Rect} from 'react-konva';
-import Konva from 'konva';
-
-import Test from './Media/Pictures/Test.png';
 
 
 

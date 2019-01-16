@@ -19,7 +19,7 @@ function HomeStatsCards(props) {
   return (
         <div>
             <Animation type="flip" reveal delay={props.delay} duration="0.8s">
-            <img src={props.img} className={classes.img}/>
+            <img src={props.img} className={classes.img} alt={props.Title}/>
             </Animation>
             <Animation type="fadeIn" reveal dealy={props.delay} duration="1s">
             <Typography align='center' style={{color:'#C45CE2'}} variant='h6' >

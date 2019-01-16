@@ -57,19 +57,19 @@ const FooterLinks=[
         <Row>
           <Col md="12" className="py-5">
             <div className="mb-5 flex-center">
-              <a className="fb-ic" href="https://www.facebook.com/psypherLAofficial/" target="_blank">
+              <a className="fb-ic" href="https://www.facebook.com/psypherLAofficial/" target="_blank" rel='noopener noreferrer'>
                 <i className="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="gplus-ic">
+              <a className="gplus-ic" href='https://www.google.com' target="_blank" rel='noopener noreferrer'>
                 <i className="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="ins-ic" href="https://www.instagram.com/psypherla/" target="_blank">
+              <a className="ins-ic" href="https://www.instagram.com/psypherla/" target="_blank" rel='noopener noreferrer'>
                 <i className="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="ytube-ic" href="https://www.youtube.com/channel/UC1OPKweUr8nS75zKuO_FMeA" target="_blank">
+              <a className="ytube-ic" href="https://www.youtube.com/channel/UC1OPKweUr8nS75zKuO_FMeA" target="_blank" rel='noopener noreferrer'>
                 <i className="fa fa-youtube fa-lg white-text fa-2x"> </i>
               </a>
             </div>

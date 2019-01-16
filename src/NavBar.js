@@ -36,7 +36,7 @@ state = {
       <div style={{paddingBottom:'77px'}}>
       <Navbar color="black" dark expand="md" fixed='top'>
           <NavbarBrand>
-            <NavLink to={process.env.PUBLIC_URL+'/'}><img src={BackgroundPsypher} style={navPsypher}/></NavLink>
+            <NavLink to={process.env.PUBLIC_URL+'/'}><img src={BackgroundPsypher} style={navPsypher} alt="Psypher Logo"/></NavLink>
           </NavbarBrand>
            <NavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
             <Collapse id="navbarCollapse3" isOpen={this.state.collapseID} navbar>
@@ -77,14 +77,14 @@ state = {
                 </Dropdown>
               </NavItem>
               <NavItem style={{paddingTop:9, paddingLeft:4}}>
-                <a href="/Home#ContactUs" style={{color:'white'}}>Contact Us</a>
+                <a href={process.env.PUBLIC_URL+'/#ContactUs'} style={{color:'white'}}>Contact Us</a>
               </NavItem>
             </NavbarNav>
 
             <NavbarNav right>
             {socialMedia.map(item=>(
               <NavItem>
-                  <a href={item.link} target="_blank" style={{color:'white', padding:'10px'}}>
+                  <a href={item.link} target="_blank" rel='noopener noreferrer' style={{color:'white', padding:'10px'}}>
                     <Fa icon={item.icon} />
                   </a>
               </NavItem>
