@@ -3,6 +3,7 @@ import { Rect} from 'react-konva';
 
 
 
+
 export default class MidRect extends React.Component {
   constructor(props){
   super(props);
@@ -38,7 +39,7 @@ export default class MidRect extends React.Component {
 
   render() {
     return (
-      <Rect
+        <Rect
         x={this.props.x}
         y={this.props.y}
         width={this.props.width}
@@ -49,7 +50,6 @@ export default class MidRect extends React.Component {
         fillPatternScaleY={this.props.fillPatternScaleY}
         fillPatternRepeat={this.props.fillPatternRepeat}
         fill={this.props.fill}
-        
       />
     );
   }
