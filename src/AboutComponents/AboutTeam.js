@@ -24,40 +24,49 @@ const headshotData=[
 	//yScaler affects the vertical
 	{
 		id:'0',
-		profIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Liam_Neeson_Deauville_2012_2.jpg/220px-Liam_Neeson_Deauville_2012_2.jpg',
-     	danceIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
+		profIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/49375898_2215758735329558_9127895373426196480_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=3a76b6e77d42aa8b8750e06cf050bb96&oe=5CCF0859',
+     	danceIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/49375898_2215758735329558_9127895373426196480_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=3a76b6e77d42aa8b8750e06cf050bb96&oe=5CCF0859',
      	xScaler:'0.125', 
      	yScaler:'0.388', 
      	strokeWidth:'9',
      	fill:'teal',
-     	text:'Media Director - Noelle Funtanilla',
+     	name:'Noelle Funtanilla',
+     	title:'Media Director',
+     	quote:'Quote Here',
 	},
 	{
 		id:'1',
-		profIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
+		profIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/39588898_10212571339586407_8985382564634034176_o.jpg?_nc_cat=105&_nc_ht=scontent-lax3-1.xx&oh=ec977241ed1254a83125039131cd1f62&oe=5CB8F303',
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'.1875',	
      	yScaler:'.222',	
      	strokeWidth:'9',
-     	text:'Project Manager - Grace Park',
+     	name:'Matthew Diep',
+     	title:'Founder',
+     	quote:'Quote Here',
 	},
 	{
 		id:'2',
-		profIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
+		profIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/30171796_2313199325360565_6318129777791011645_o.jpg?_nc_cat=103&_nc_ht=scontent-lax3-1.xx&oh=a9f4d85094d8c2fa6184f0b4e27e3aa4&oe=5CFECFC2',
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.386',	
      	yScaler:'0.111',	
      	strokeWidth:'9',
-     	text:'Web & Data Engineer - Calvin Ha',
+     	name:'Calvin Ha',
+     	title:'Web & Data Engineer',
+     	quote:'Quote Here',
 	},
 	{
 		id:'3',
-		profIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
+		profIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/29186213_10215573524116197_387254132810973184_n.jpg?_nc_cat=109&_nc_ht=scontent-lax3-1.xx&oh=5f11ec704faa2a1681565c34ec2de398&oe=5CD01C45',
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.588',	
      	yScaler:'0.111',	
      	strokeWidth:'9',
      	text:'Social Media Coordinator - Ryan Tang',
+     	name:'Ryan Tang',
+     	title:'Social Media Coordinator',
+     	quote:'',
 	},
 	{
 		id:'4',
@@ -67,15 +76,20 @@ const headshotData=[
      	yScaler:'0.222',	
      	strokeWidth:'9',
      	text:'Community Outreach - Ludwig Ompad',
+     	name:'Ludwig Ompad',
+     	title:'Community Outreach',
+     	quote:'',
 	},
 	{
 		id:'5',
-		profIMG:'http://www.lukebrasel.com/wp-content/uploads/2016/06/Luke-Brasel-headshot-circle.png',
+		profIMG:'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44407263_10212818219116707_871164163861250048_n.jpg?_nc_cat=100&_nc_ht=scontent-lax3-1.xx&oh=ee59fe3adab3d18ea513cbcffca8f581&oe=5CCD85A5',
      	danceIMG:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Liam_Neeson_TIFF_2008.jpg/170px-Liam_Neeson_TIFF_2008.jpg',
      	xScaler:'0.85',
      	yScaler:'0.388',	
      	strokeWidth:'9',
-     	text:'Intern - Alyssa Bernal',
+     	name:'Grace Park',
+     	title:'Project Manager',
+     	quote:'',
 	},
 	{
 		id:'6',
@@ -84,7 +98,9 @@ const headshotData=[
      	xScaler:'0.7875',	
      	yScaler:'0.556',	
      	strokeWidth:'9',
-     	text:'6',
+     	name:'Alyssa Bernal',
+     	title:'Intern',
+     	quote:'',
 	},
 	{
 		id:'7',
@@ -93,7 +109,9 @@ const headshotData=[
      	xScaler:'0.588',	
      	yScaler:'0.722',	
      	strokeWidth:'9',
-     	text:'7',
+     	name:'Name',
+     	title:'Title ',
+     	quote:'Quote',
 	},
 	{
 		id:'8',
@@ -102,7 +120,9 @@ const headshotData=[
      	xScaler:'0.385',	
      	yScaler:'0.722',	
      	strokeWidth:'9',
-     	text:'8',
+     	name:'',
+     	title:'',
+     	quote:'',
 	},
 	{
 		id:'9',
@@ -111,8 +131,10 @@ const headshotData=[
      	xScaler:'0.188',	
      	yScaler:'0.556',	
      	strokeWidth:'9',
-     	text:'Lian Neeson; Friendly Neighborhood Special Agent, Stalker, and Badass Father; I will find you & I Will kill you'
-	},
+     	name:'',
+     	title:'',
+     	quote:'',
+     },
 ];
 
 export default class TeamBios extends React.Component{
@@ -179,24 +201,39 @@ export default class TeamBios extends React.Component{
 	//function that renders the text for the clicked Headshot within the center rectangle
 	renderText(indexNum,arrayData){
 		return(
-			<Spring
-			from={{opacity:0}}
-			to={{opacity:1}}
-			>
-			{props =>(
+			<>
 				<Text
-					{...props}
 					x={window.innerWidth/2.2}
-		         	y={window.innerHeight/4}
+		         	y={window.innerHeight/3.8}
 		         	width={window.innerWidth/4}
 		         	height={window.innerHeight/3}
-		         	text={arrayData[indexNum].text}
+		         	text={arrayData[indexNum].name}
+		         	fontSize={40}
+		         	fontFamily='sans-seriff'
+		         	fill={'black'}
+		         	align={'center'}
+				/>
+				<Text
+					x={window.innerWidth/2.15}
+		         	y={window.innerHeight/2.9}
+		         	width={window.innerWidth/4}
+		         	height={window.innerHeight/6}
+		         	text={arrayData[indexNum].title}
 		         	fontSize={30}
 		         	fontFamily='sans-seriff'
 		         	fill={'black'}
 				/>
-			)}
-			</Spring>
+				<Text
+					x={window.innerWidth/2.15}
+		         	y={window.innerHeight/2.5}
+		         	width={window.innerWidth/4}
+		         	height={window.innerHeight/6}
+		         	text={arrayData[indexNum].quote}
+		         	fontSize={23}
+		         	fontFamily='sans-seriff'
+		         	fill={'black'}
+				/>
+			</>
 		)
 	}
 
@@ -222,20 +259,36 @@ export default class TeamBios extends React.Component{
 				 {this.renderHeadshot(9,headshotData)}
 
 		         {this.state.highlightMode ? 
-		         <MidRect
-		         	x={window.innerWidth/3.5}
-		         	y={window.innerHeight/4}
-		         	width={window.innerWidth/12*5}
-		         	height={window.innerHeight/3}
-		         	opacity={0.6}
-		         	profIMG={this.state.rectIMG}
-		         	fillPatternScaleX={0.25}
-			        fillPatternScaleY={0.2}
-			        fillPatternRepeat={'no-repeat'}
-		         />
+		         <>
+			         <MidRect
+			         	x={window.innerWidth/3}
+			         	y={window.innerHeight/4}
+			         	width={window.innerWidth/3}
+			         	height={window.innerHeight/3}
+			         	opacity={0.6}
+			         	fill={'teal'}
+			         />
+			         <Text
+						x={window.innerWidth/3}
+			         	y={window.innerHeight/3}
+			         	width={window.innerWidth/3}
+			         	height={window.innerHeight/3}
+			         	align={'center'}
+			         	text={"Jump In To Psypher! Click on a Headshot"}
+			         	fontSize={45}
+			         	fontFamily='sans-seriff'
+			         	fill={'black'}
+					/>
+				</>
 		         :
 		         <>
+		         <Spring
+					from={{opacity:0}}
+					to={{opacity:1}}
+					>
+					{props =>(
 			         <MidRect 
+			         	{...props}
 			         	x={window.innerWidth/2.2}
 			         	y={window.innerHeight/4}
 			         	width={window.innerWidth/4}
@@ -243,6 +296,8 @@ export default class TeamBios extends React.Component{
 			         	opacity={0.5}
 			         	fill={'teal'}
 			         />
+			         )}
+			         </Spring>
 			         {this.renderText(this.state.activeHeadshot,headshotData)}
 		         </>
 		     }
