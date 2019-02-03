@@ -10,6 +10,12 @@ import Footer from './Footer';
 
 import PartnerCards from './PartnersComponents/PartnerCards.js';
 
+import ReactGA from 'react-ga';
+function initializeReactGA() {
+    ReactGA.initialize('UA-133659922-1');
+    ReactGA.pageview('/partners');
+}
+
 const styles = theme => ({
   appBar: {
     position: 'relative',

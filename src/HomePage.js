@@ -10,6 +10,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Animation } from "mdbreact";
 
 //Home Components
+import HomeLandingBanner from './HomeComponents/HomeLandingBanner.js';
 import VideoCarousel from './HomeComponents/HomeVideoCarousel.js';
 import HomeMissionCards from './HomeComponents/HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeComponents/HomeTestimonialsCards.js';
@@ -23,7 +24,6 @@ import HomeMessaingSection from './HomeComponents/HomeMessaging.js';
 import instaIcon from './GeneralMedia/Pictures/instaIcon.jpg';
 import youtubeIcon from './GeneralMedia/Pictures/youtubeIcon.jpg';
 import emailIcon from './GeneralMedia/Pictures/emailIcon.jpg';
-import BackgroundPsypher from './GeneralMedia/Pictures/Psypher.png';
 
 //Home Media 
 import TestimonialsPic from './HomeComponents/Media/Pictures/TestimonialsPic.jpg';
@@ -45,26 +45,13 @@ import WorkshopPic5 from './HomeComponents/Media/Pictures/Workshop5.jpg';
 import WorkshopPic6 from './HomeComponents/Media/Pictures/Workshop6.jpg';
 
 
+import ReactGA from 'react-ga';
+function initializeReactGA() {
+    ReactGA.initialize('UA-133659922-1');
+    ReactGA.pageview('/homepage');
+}
+
 const styles = theme => ({
-  topPicContainer: {
-    backgroundImage: `url(${Background})`,
-    backgroundColor: '#000000',
-    backgroundSize:'cover',
-    backgroundRepeat:'no-repeat',
-    height:"85vh",
-    width:'100%',
-    maxHeight:'937px',
-    backgroundPosition:'center',
-    backgroundAttachment:'fixed',
-  },
-  topPsypherPic:{
-    backgroundImage: `url(${BackgroundPsypher})`,
-    backgroundSize:'contain',
-    backgroundRepeat:'no-repeat',
-    height:"60vh",
-    width:'100%',
-    backgroundPosition:'top',
-  },
   missionUnit:{
     backgroundColor:'white',
     paddingTop:10,
@@ -201,14 +188,12 @@ function HomePage(props) {
           
           <main>
           {/*Home Banner Section*/}
+          <HomeLandingBanner/>
 
-        <Grid container direction='column' justify="center" alignItems="center" className={classes.topPicContainer} xs={12} sm={12} med={12}> 
-          <Grid className={classes.topPsypherPic}> </Grid>
-        </Grid>
       
       {/*Start Mission Section */}
         <div className={classes.missionUnit}>
-            <Animation type="fadeInUp" delay='1s'duration="0.8s">
+            
             <Grid container direction ='row' spacing={8}>
               <Grid item xs={12} sm={3} med={3} lg={3}>
               <HomeMissionPics
@@ -236,7 +221,6 @@ function HomePage(props) {
               />  
               </Grid>
             </Grid>
-            </Animation>
 
             <Animation type="fadeInUp" reveal delay="0.5s" duration="0.8s" >
             <Grid container direction ='row' alignItems='center' className={classes.missionBody}>  
@@ -431,9 +415,7 @@ function HomePage(props) {
 
       {/*Start ContactUs Section*/}
         <div className={classes.contactUnit} id="ContactUs">
-          <Animation type="fadeIn" reveal delay='0.3s'duration="0.8s">
-            <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
-          </Animation>
+          <Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
           <Grid container direction='column' alignItems='center' justify='center' className={classes.ContactMessagingBody}>
             <HomeMessaingSection/>
           </Grid>

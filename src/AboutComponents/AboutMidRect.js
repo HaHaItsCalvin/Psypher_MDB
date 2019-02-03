@@ -1,9 +1,6 @@
 import React from 'react';
 import { Rect} from 'react-konva';
 
-
-
-
 export default class MidRect extends React.Component {
   constructor(props){
   super(props);

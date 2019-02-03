@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-
 import Home from './HomePage';
 import About from './About';
 import Partners from './Partners';
 import Workshops from './Workshops';
 import Schedule from './Schedule';
 import Resources from './Resources';
+
+
 
 class App extends Component {
   render() {

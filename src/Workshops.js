@@ -9,9 +9,9 @@ class Workshops extends React.Component {
       <React.Fragment>
         <NavBar/>
         <main>
+        <
         </main>
         <FooterNav/>
-        <h1> WORKSHOPS</h1>
       </React.Fragment>
     );
   }

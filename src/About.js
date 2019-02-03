@@ -8,6 +8,11 @@ import { Animation } from "mdbreact";
 import AboutTeam from './AboutComponents/AboutTeam';
 import AboutFAQ from './AboutComponents/AboutFAQs.js';
 
+import ReactGA from 'react-ga';
+function initializeReactGA() {
+    ReactGA.initialize('UA-133659922-1');
+    ReactGA.pageview('/about');
+}
 
 const Menu=[
   {
@@ -58,6 +63,7 @@ class About extends React.Component {
       <React.Fragment>
         <NavBar/>
         <main> 
+        
         <Animation type="fadeIn" delay='0.5s'duration="0.8s">
          <AboutTeam/>
         </Animation>

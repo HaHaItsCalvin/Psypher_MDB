@@ -30,7 +30,7 @@ export default class HeadshotsKonva extends React.Component {
       to={{
         x:this.props.isActive ? window.innerWidth*0.33 : this.props.x,
         y:this.props.isActive ? window.innerHeight*0.388 : this.props.y,
-        radius: this.props.isActive ? this.props.radius*window.innerWidth/575 : this.props.radius,
+        radius: this.props.isActive ? this.props.radius*window.innerWidth/675 : this.props.radius,
         shadowBlur: this.props.isActive ? 25 : 5,
         fillPatternScaleX:this.props.isActive ? this.props.fillPatternScaleX * 2 : this.props.fillPatternScaleX,
         fillPatternScaleY:this.props.isActive ? this.props.fillPatternScaleY * 2 : this.props.fillPatternScaleY,

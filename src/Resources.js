@@ -11,12 +11,12 @@ class Resources extends React.Component {
         <NavBar/>
         <main>
           <div >
-            <h1 align='center'> Test Map </h1>
+            <h1 align='center'> Explore Neary Resources </h1>
             <ResourceMap/>
           </div>
+          
         </main>
         <FooterNav/>
-        <h1> WORKSHOPS</h1>
       </React.Fragment>
     );
   }
