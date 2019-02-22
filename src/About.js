@@ -59,6 +59,7 @@ const FAQsTeaching=[
 class About extends React.Component {
   render() {
     console.log('ABOUT')
+    initializeReactGA();
     return (
       <React.Fragment>
         <NavBar/>

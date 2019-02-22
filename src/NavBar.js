@@ -50,9 +50,26 @@ state = {
               <NavItem>
                 <NavLink to="/Partners">Partners</NavLink>
               </NavItem>              
+
               <NavItem>
-                <NavLink to="/Workshops">Workshops</NavLink>
+                <Dropdown>
+                  <DropdownToggle  nav caret>
+                    <div className="d-none d-md-inline">Workshops</div>
+                  </DropdownToggle>
+                  <DropdownMenu className="dropdown-default"right>
+                    <NavLink to="/Booking">
+                      <DropdownItem>Book a Workshop</DropdownItem>
+                    </NavLink>
+                    <NavLink to="/Schedule">
+                      <DropdownItem>Upcoming Workshops</DropdownItem>
+                    </NavLink>
+                    <NavLink to="/PastWorkshops">
+                      <DropdownItem >Past Workshops</DropdownItem>
+                    </NavLink>
+                  </DropdownMenu>
+                </Dropdown>
               </NavItem>
+
               <NavItem>
                 <Dropdown>
                   <DropdownToggle  nav caret>

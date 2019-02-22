@@ -175,9 +175,10 @@ const theme = createMuiTheme({
 function HomePage(props) {
   const { classes } = props;  
   console.log('start')
-    console.log('New Test with NavBar')
-    console.log(process.env.PUBLIC_URL)
-    console.log('end')
+  console.log('New Test with NavBar')
+  console.log(process.env.PUBLIC_URL)
+  console.log('end')
+  initializeReactGA();
   return(
   <MuiThemeProvider theme={theme}>
   <React.Fragment>

@@ -75,6 +75,7 @@ function Workshops(props) {
     console.log('New Test with NavBar')
     console.log(process.env.PUBLIC_URL)
     console.log('end')
+    initializeReactGA();
   return (
     <React.Fragment>
       <CssBaseline />
